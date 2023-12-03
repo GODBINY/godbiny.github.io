@@ -1,6 +1,6 @@
 {
   "name": "godbiny.github.io",
-  "homepage": "https://godbiny.github.io",
+  "homepage": "https://godbiny.github.io/src",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
