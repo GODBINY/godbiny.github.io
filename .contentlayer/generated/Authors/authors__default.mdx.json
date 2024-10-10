@@ -1,0 +1,30 @@
+{
+  "name": "GODBIN",
+  "avatar": "/static/images/profile.jpg",
+  "occupation": "Software Engineer",
+  "linkedin": "https://www.linkedin.com/in/god-bin-8999aa297/",
+  "github": "https://github.com/GODBINY",
+  "body": {
+    "raw": "I am GODBIN",
+    "code": "var Component=(()=>{var d=Object.create;var i=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var x=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,h=Object.prototype.hasOwnProperty;var l=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),w=(t,n)=>{for(var e in n)i(t,e,{get:n[e],enumerable:!0})},c=(t,n,e,a)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of x(n))!h.call(t,o)&&o!==e&&i(t,o,{get:()=>n[o],enumerable:!(a=f(n,o))||a.enumerable});return t};var D=(t,n,e)=>(e=t!=null?d(g(t)):{},c(n||!t||!t.__esModule?i(e,\"default\",{value:t,enumerable:!0}):e,t)),_=t=>c(i({},\"__esModule\",{value:!0}),t);var s=l((B,m)=>{m.exports=_jsx_runtime});var I={};w(I,{default:()=>u,frontmatter:()=>j});var r=D(s()),j={name:\"GODBIN\",avatar:\"/static/images/profile.jpg\",occupation:\"Software Engineer\",linkedin:\"https://www.linkedin.com/in/god-bin-8999aa297/\",github:\"https://github.com/GODBINY\"};function p(t){let n={p:\"p\",...t.components};return(0,r.jsx)(n.p,{children:\"I am GODBIN\"})}function u(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,{...t,children:(0,r.jsx)(p,{...t})}):p(t)}return _(I);})();\n;return Component;"
+  },
+  "_id": "authors/default.mdx",
+  "_raw": {
+    "sourceFilePath": "authors/default.mdx",
+    "sourceFileName": "default.mdx",
+    "sourceFileDir": "authors",
+    "contentType": "mdx",
+    "flattenedPath": "authors/default"
+  },
+  "type": "Authors",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.015,
+    "time": 900,
+    "words": 3
+  },
+  "slug": "default",
+  "path": "authors/default",
+  "filePath": "authors/default.mdx",
+  "toc": []
+}
