@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e763cef-86a1-4727-9630-5cfad5c0f16e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/Main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/about/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/api/newsletter/route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/blog/[...slug]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/blog/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/blog/page/[page]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/not-found.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/projects/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/robots.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/seo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/sitemap.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/tag-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/tags/[tag]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/tags/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/app/theme-providers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/Card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/Comments.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/Footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/Image.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/LayoutWrapper.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/Link.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/MDXComponents.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/MobileNav.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/PageTitle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/ScrollTopAndComment.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/SearchButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/SectionContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/TableWrapper.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/Tag.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/ThemeSwitch.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/social-icons/icons.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/components/social-icons/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/contentlayer.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/css/prism.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/css/tailwind.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/authors/default.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/authors/sparrowhawk.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/code-sample.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/deriving-ols-estimator.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/github-markdown-guide.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/guide-to-using-images-in-nextjs.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/introducing-tailwind-nextjs-starter-blog.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/my-fancy-title.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/new-features-in-v1.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/pictures-of-canada.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/release-of-tailwind-nextjs-starter-blog-v2.0.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/blog/the-time-machine.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/headerNavLinks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/projectsData.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/references-data.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/data/siteMetadata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/faq/custom-mdx-component.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/faq/customize-kbar-search.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/layouts/AuthorLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/layouts/ListLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/layouts/ListLayoutWithTags.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/layouts/PostBanner.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/layouts/PostLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/layouts/PostSimple.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/next-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/prettier.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/favicons/android-chrome-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/favicons/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/favicons/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/favicons/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/favicons/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/favicons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/favicons/mstile-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/favicons/safari-pinned-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/favicons/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/canada/lake.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/canada/maple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/canada/mountains.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/canada/toronto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/github-traffic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/ocean.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/sparrowhawk-avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/time-machine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/public/static/images/twitter-card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/scripts/postbuild.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/scripts/rss.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind-nextjs-starter-blog/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2nFlzpg1eXLfzhndaqGwSD8T5Ot" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e763cef-86a1-4727-9630-5cfad5c0f16e" name="Changes" comment="" />
+      <created>1728576971424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728576971424</updated>
+      <workItem from="1728576973282" duration="201000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

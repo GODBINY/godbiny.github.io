@@ -1,0 +1,79 @@
+---
+title: '개발자 도구 Network Tab + Media 에서 의미하는 것들'
+date: '2024-10-07'
+tags: ['daily log', 'web']
+draft: false
+summary: 'image, video fallback 작업을 진행하며 알게 된 것들 - 개발자도구 Network Tab & Media'
+---
+fallback을 적용하여 포맷 변경(확장자 아님! 확장자는 윈도우에서만 쓰이는 용어라고 한다)을 하려고 한다.
+- 확장자 : 파일 형식이나 종류를 '구분'하기 위해 뒤에 붙이는 . + 알파벳 (실제 파일의 성격과는 상관이 없음)
+
+속도도 빨라지고 용량도 줄어드니 왜 해야하는지는 알았다.
+하지만 얼마나 효과가 있는지를 정리하여 보고해야했다.
+
+별도의 이야기 이지만
+나는 같은 갯수의 동일한 동영상/이미지를 목록화하여
+AS-IS 시간 총합 / 용량 총합
+TO-BE 시간 총합 / 용량 총합
+을 비교하였는데, 위에서 원한 것은 각각 한개씩 동영상의 로딩속도, 용량을 별도로 또 확인할 수 있도록 하는 것이었다.
+
+결국 모수는 같기 때문에 시간 총합/ 용량 총합으로 비교해도 보이는것을..
+하지만 태클이 걸렸다.
+
+>1. 왜 기존 포맷을 적용했을 떼 로딩속도가 더 빠른 미디어들이 존재하는가?
+
+나는 har파일을 분석했는데, 이게 메모장으로 열어보기에는 용량이 너무 커서 파이썬으로 url, load time, size를 추출했었다.
+>2. 왜 한개의 영상/이미지에 대한 로그가 여러 줄이 찍혀있을까?
+
+동일한 사이즈의 영상이니 캐싱 처리가 된것으로 생각하고 통계 낼 때에는 합쳤었는데,
+보고 할 때에는 조금 더 명확한 설명이 필요해보였다.
+
+그래서 정리해보려고 한다.
+1. 206 Partial Content
+   [참고사이트](https://productiveshop.com/http-error-206-partial-content/#:~:text=The%20206%20status%20code%2C%20or,to%20fulfill%20the%20entire%20request.)
+>A Request for a resource has been successful, but only partial content was received.
+>
+>The cause of a 206 status code can vary, but the most common reason is that the server was unable to fulfill the entire request. This can be due to a number of factors, such as heavy traffic or an error on the server. In most cases, it is simply a matter of the server being overwhelmed and unable to complete the request in a timely manner.
+
+2. 동일한 리소스 url에 대하여 network tab에서 multiple rows가 존재하는 경우 [http range request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests)
+> 동영상
+>> HTTP Range Request 때문이다. 범위 요청은 클라이언트가 한번에 전체 파일을 다운로드하지 않고 필요한 부분만 나누어 받아오는 방식.
+>>
+>> 이렇게 하는 이유는 네트워크 대역폭을 절약하기 위해 자동으로 적용되어 있는 것 같다.
+>> 1번의 206 응답은 HTTP Range Request에 대한 응답을 나타냄. 서버가 클라이언트의 요청에 따라 파일의 특정 범위를 제공했다는 뜻임.
+>>
+>> 이유 1 : 동영상 스트리밍 - 처음부터 끝까지 한번에 다운로드 하지 않고 필요한 구간만 받는 경우, 같은 URL으로 여러 행의 요청이 발생할 수 있다.(각 행을 보면 범위가 각각 다름)
+>>
+>> 이유 2 : 동영상 플레이어의 자체 기능임(버퍼링)
+>>
+>> 이유 3 : 브라우저와 네트워크 상황에 따라, 그 상황이 불안정하거나 느린 경우 동영상 플레이어가 자체적으로 일부 파일을 나누어받도록 한다.
+>>
+>> 환경에 따라 랜덤으로 한번에 통으로 받을수도 있고, 나눠 받을 수도 있다는거다.
+>
+> 이미지
+>> 이미지는 보통 크기가 작아서 한번에 받아지는게 일반적이지만
+>>
+>> 1. 네트워크 상태가 불안정할 경우
+>> 2. 이미지 파일 크기가 매우 클 경우
+>> 3. lazy-loading이 적용되어 있을 경우에도 한 이미지에 대해 여러번의 요청이 발생할 수 있다.
+
+### 분할 요청 응답
+>범위 요청을 처리할 때, 다음의 3가지 상태가 있습니다:
+>
+>성공적으로 보내질 경우에는, 206 Partial Content 상태가 서버에서 돌아옵니다.
+>
+>범위를 벗어난 경우(범위 값이 리소스 크기를 벗어났을 때), 서버는 416 Requested Range Not Satisfiable 상태로 답합니다.
+>
+>범위 요청을 지원하지 않는 경우, 서버는 200 OK 상태를 돌려보냅니다.
+>
+>
+
+### content-length와 content-range
+>Content-Length 헤더는 이제 요청한 범위의 크기(전체 이미지의 크기가 아님)를 알려줍니다.
+>
+>Content-Range 헤더는 리소스의 전체 크기와 메시지가 어느 부분에 속하는지 알려줍니다.
+
+### Age
+> Age 헤더는 객체가 프록시 캐시 내에 머무는 초단위의 시간을 가집니다.
+>
+>Age 헤더는 보통 0에 가깝습니다. 만약 Age: 0라면, 그것은 아마도 원 서버로부터 막 내려받은 것일 겁니다. 그게 아니라면 프록시의 현재 시간과 HTTP 응답 내에 포함된 Date 일반 헤더의 차로 계산됩니다.
