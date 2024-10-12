@@ -17,7 +17,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          yarn install --frozen-lockfile=false
+          yarn install --no-immutable
           yarn build && touch ./out/.nojekyll
 
       - name: Deploy 🚀
