@@ -23,12 +23,12 @@ jobs:
           yarn build
           ls -la ./out
 
-      - name: Move images from static to public
-        run: |
-          mkdir -p ./out/public/static/images
-          mkdir -p ./out/public/static/favicons
-          mv ./out/static/images/* ./out/public/static/images/ 
-          mv ./out/static/favicons/* ./out/public/static/favicons/ 
+#      - name: Move images from static to public
+#        run: |
+#          mkdir -p ./out/public/static/images
+#          mkdir -p ./out/public/static/favicons
+#          mv ./out/static/images/* ./out/public/static/images/
+#          mv ./out/static/favicons/* ./out/public/static/favicons/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e763cef-86a1-4727-9630-5cfad5c0f16e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/godbiny.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/nextjs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/nextjs.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
     </list>
@@ -76,7 +74,7 @@
       <workItem from="1728576973282" duration="4282000" />
       <workItem from="1728725971656" duration="9836000" />
       <workItem from="1728743856648" duration="2000" />
-      <workItem from="1728743879551" duration="341000" />
+      <workItem from="1728743879551" duration="1155000" />
     </task>
     <servers />
   </component>
