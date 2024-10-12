@@ -18,7 +18,8 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn install --no-immutable
-          yarn build && touch ./out/.nojekyll
+          yarn build
+          touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
