@@ -28,6 +28,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "22.9.0",
+    "javascript.nodejs.core.library.typings.version": "22.7.5",
     "last_opened_file_path": "/Users/godbin/workspace/godbiny.github.io/out",
     "nodejs_package_manager_path": "npm"
   }
@@ -50,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728576971424</updated>
       <workItem from="1728576973282" duration="4282000" />
-      <workItem from="1728725971656" duration="6117000" />
+      <workItem from="1728725971656" duration="6497000" />
     </task>
     <servers />
   </component>
