@@ -15,12 +15,10 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
 
-      - name: touch out folder 🔧
-        run: touch ./out
-
       - name: Install and Build 🔧
         run: |
           yarn install --no-immutable
+          touch ./out/.nojekyll
           yarn build
 
       - name: Deploy 🚀
