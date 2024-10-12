@@ -21,6 +21,7 @@ jobs:
           mkdir -p ./out
           touch ./out/.nojekyll
           yarn build
+          ls -la ./out
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
