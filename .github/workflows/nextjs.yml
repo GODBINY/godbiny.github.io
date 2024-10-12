@@ -12,6 +12,10 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
+      # Corepack을 활성화하는 단계 추가
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Install and Build 🔧
         run: |
           yarn install
