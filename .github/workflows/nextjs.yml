@@ -26,7 +26,3 @@ jobs:
         with:
           branch: gh-pages
           folder: out
-
-      - name: create nojekyll
-        run:
-          touch ./out/.nojekyll
