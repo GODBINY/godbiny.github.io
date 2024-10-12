@@ -18,6 +18,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn install --no-immutable
+          mkdir -p ./out
           touch ./out/.nojekyll
           yarn build
 
