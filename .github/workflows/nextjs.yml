@@ -23,6 +23,11 @@ jobs:
           yarn build
           ls -la ./out
 
+      - name: Move images to out directory
+        run: |
+          mkdir -p ./out/public/static/images
+          mv ./static/images/* ./out/public/static/images/
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
