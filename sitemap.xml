@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://godbiny.github.io/</loc>
-<lastmod>2024-10-13</lastmod>
+<lastmod>2024-10-14</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog</loc>
-<lastmod>2024-10-13</lastmod>
+<lastmod>2024-10-14</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/projects</loc>
-<lastmod>2024-10-13</lastmod>
+<lastmod>2024-10-14</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/tags</loc>
-<lastmod>2024-10-13</lastmod>
+<lastmod>2024-10-14</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog/2024/09/AWS CloudFront cache polices</loc>
@@ -22,6 +22,10 @@
 </url>
 <url>
 <loc>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]a와 b 출력하기</loc>
+<lastmod>2024-10-14T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 반복해서 출력하기</loc>
 <lastmod>2024-10-14T00:00:00.000Z</lastmod>
 </url>
 <url>
