@@ -1,0 +1,106 @@
+---
+title: '[프로그래머스][JavaScript]대소문자 바꿔서 출력하기'
+date: '2024-10-14'
+tags: ['Algorithm','Coding Test','JavaScript']
+draft: false
+summary: ''
+---
+#### 문제 설명
+    영어 알파벳으로 이루어진 문자열 str이 주어집니다. 
+    각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.
+#### 제한사항
+    1 ≤ str의 길이 ≤ 20
+        * str은 알파벳으로 이루어진 문자열입니다.
+#### 입출력 예
+입력 #1
+
+```aBcDeFg```
+
+출력 #1
+
+```AbCdEfG```
+
+---
+#### 풀이 1
+````
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let input = [];
+
+rl.on('line', function (line) {
+    input = [line];
+}).on('close',function(){
+    let result = '';
+    str = input[0];
+    
+    for(var i=0;i<str.length;i++){
+        if(str[i] !== str[i].toUpperCase()){
+            result += str[i].toUpperCase()
+        } else if (str[i] !== str[i].toLowerCase()) {
+            result += str[i].toLowerCase()
+        }
+    }
+    console.log(result)
+});
+````
+#### 풀이 2
+````
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let input = [];
+
+rl.on('line', function (line) {
+    input = [line];
+}).on('close',function(){
+    let result = [];
+    str = input[0].split('');
+    
+    result = str.map((item)=>{
+        if(item !== item.toUpperCase()) {
+            return item.toUpperCase()
+        } else {
+            return item.toLowerCase()
+        }
+    })
+    console.log(result.join(''))
+});
+````
+---
+#### 다른사람의 풀이에서 알게된 것
+[Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
+>  The join() method of Array instances creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+
+```
+  const name = ['ga','na','da'];
+  
+  console.log(name.join());
+  // Excepted output : "ga,na,da"
+  console.log(name.join(''));
+  // Excepted output : "ganada"
+  console.log(name.join('?'));
+  // Excepted output : "ga?na?da"
+```
+
+[String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+
+>  The split() method of String values takes a pattern and divides this string into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array.
+> 
+```
+  const str = Today I ate ice cream;
+  
+  console.log(str.split(''));
+  // Excepted output : Array - ["T","o","d","a","y","I","a","t","e","i","c","e","c","r","e","a","m"];
+  console.log(str.split(' '));
+  // Excepted output : Array - ["Today","I","ate","ice","cream"];
+  console.log(str.split());
+  // Excepted output : Array = ["Today I ate ice cream"]
+```
