@@ -21,7 +21,7 @@ summary: ''
 ```AbCdEfG```
 
 ---
-#### 풀이 1
+#### 내 풀이 1
 ````
 const readline = require('readline');
 const rl = readline.createInterface({
@@ -47,7 +47,7 @@ rl.on('line', function (line) {
     console.log(result)
 });
 ````
-#### 풀이 2
+#### 내 풀이 2
 ````
 const readline = require('readline');
 const rl = readline.createInterface({
@@ -75,7 +75,7 @@ rl.on('line', function (line) {
 ````
 ---
 #### 다른사람의 풀이에서 알게된 것
-[Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+1. [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 >  The join() method of Array instances creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
 
@@ -90,7 +90,7 @@ rl.on('line', function (line) {
   // Excepted output : "ga?na?da"
 ```
 
-[String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+2. [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 >  The split() method of String values takes a pattern and divides this string into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array.
 > 
@@ -103,4 +103,17 @@ rl.on('line', function (line) {
   // Excepted output : Array - ["Today","I","ate","ice","cream"];
   console.log(str.split());
   // Excepted output : Array = ["Today I ate ice cream"]
+```
+
+3. *** [RegExp.prototype.test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
+>  The test() method of RegExp instances executes a search with this regular expression for a match between a regular expression and a specified string. Returns true if there is a match; false otherwise.
+>
+```
+  const str = aBcDeF;
+  
+  console.log(/[a-z]/.test(str[0]));
+  // Excepted output : true
+  console.log(/[a-z]/.test(str[1]));
+  // Excepted output : false
+
 ```
