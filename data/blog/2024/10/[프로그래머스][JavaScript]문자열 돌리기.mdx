@@ -1,0 +1,53 @@
+---
+title: '[프로그래머스][JavaScript]문자열 돌리기'
+date: '2024-10-15'
+tags: ['Algorithm','Coding Test','JavaScript']
+draft: false
+summary: ''
+---
+#### 문제 설명
+    문자열 str이 주어집니다.
+    문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.
+#### 제한사항
+    1 ≤ str의 길이 ≤ 10
+#### 입출력 예
+입력 #1
+
+```abcde```
+
+출력 #1
+
+```
+a
+b
+c
+d
+e
+```
+
+---
+#### 풀이
+````
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let input = [];
+
+rl.on('line', function (line) {
+    input = [line];
+}).on('close',function(){
+    arr = input[0].split('');
+    console.log(arr.join('\n'))
+});
+````
+한줄 소감
+> split()은 String을 Array로 만들 때 사용하는건데,
+> 
+> 그러다보니 뭘 넣어도 그냥 배열 만드는게 목적인 듯 하다.
+> 
+> split(), split(''), split(' ') 이렇게.....
+> 
+> join()은 Array 사이사이에 뭘 껴넣는 애니까 개행문자를 넣으면 되겠다 싶었더니 진짜 잘 된다.
