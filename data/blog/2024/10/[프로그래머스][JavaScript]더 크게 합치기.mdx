@@ -27,15 +27,13 @@ summary: ''
 
 ---
 #### 풀이
-````
-function solution(a, b) {
-    var answer = 0;    
-    var sum1 = a.toString() + b.toString();
-    var sum2 = b.toString() + a.toString();
-    answer = sum1 > sum2 ? sum1 : sum2
-    return Number(answer);
-}
-````
+    function solution(a, b) {
+        var answer = 0;    
+        var sum1 = a.toString() + b.toString();
+        var sum2 = b.toString() + a.toString();
+        answer = sum1 > sum2 ? sum1 : sum2
+        return Number(answer);
+    }
 ---
 #### 다른사람 풀이 보고 알게된 것
 [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
