@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://godbiny.github.io/</loc>
-<lastmod>2024-11-01</lastmod>
+<lastmod>2024-11-02</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog</loc>
-<lastmod>2024-11-01</lastmod>
+<lastmod>2024-11-02</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/projects</loc>
-<lastmod>2024-11-01</lastmod>
+<lastmod>2024-11-02</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/tags</loc>
-<lastmod>2024-11-01</lastmod>
+<lastmod>2024-11-02</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog/2024/09/AWS CloudFront cache polices</loc>
@@ -103,5 +103,9 @@
 <url>
 <loc>https://godbiny.github.io/blog/2024/10/개발자 도구 Media tab 에서 의미하는 것들</loc>
 <lastmod>2024-10-07T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://godbiny.github.io/blog/2024/11/[프로그래머스][JavaScript]flag에 따라 다른 값 반환하기</loc>
+<lastmod>2024-11-01T00:00:00.000Z</lastmod>
 </url>
 </urlset>
