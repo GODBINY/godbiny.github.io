@@ -9,13 +9,11 @@ const wikiListData: wikiList[] = [
   {
     title: 'コーディングテストでよく使われる関数',
     description: `基本的な関数だけど時々思いつかないこと`,
-    imgSrc: '/static/images/prepare.avif',
-    href: 'https://www.google.com',
+    href: 'https://godbiny.github.io/blog/wikiData/Wiki-%E9%96%A2%E6%95%B0',
   },
   {
     title: 'ギット',
     description: `ギット`,
-    imgSrc: '/static/images/prepare.avif',
     href: 'https://www.google.com',
   },
 ]
