@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://godbiny.github.io
+Sitemap: https://godbiny.github.io/sitemap.xml
