@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://godbiny.github.io/</loc>
-<lastmod>2024-12-01</lastmod>
+<lastmod>2024-12-02</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog</loc>
-<lastmod>2024-12-01</lastmod>
+<lastmod>2024-12-02</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/projects</loc>
-<lastmod>2024-12-01</lastmod>
+<lastmod>2024-12-02</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/tags</loc>
-<lastmod>2024-12-01</lastmod>
+<lastmod>2024-12-02</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog/wikiData/Wiki-関数</loc>
@@ -115,6 +115,10 @@
 <url>
 <loc>https://godbiny.github.io/blog/2024/11/[프로그래머스][JavaScript]코드 처리하기</loc>
 <lastmod>2024-11-02T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]뒤에서 5등까지</loc>
+<lastmod>2024-12-03T00:00:00.000Z</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]주사위 게임 2</loc>
