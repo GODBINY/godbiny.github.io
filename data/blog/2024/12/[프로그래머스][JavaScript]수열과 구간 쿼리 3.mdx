@@ -54,3 +54,15 @@ function solution(arr, queries) {
 ````
 이렇게 풀 수 있을 것 같다.
 
+
+와. 근데 구조분해할당으로 temp 없이 한방에 바꿔줄 수 있다고 한다. 이건 정말 신세계네...
+
+[구조분해할당](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+```
+function solution(arr, queries) {
+    queries.map(([a,b]) => {
+        [arr[a],arr[b]] = [arr[b],arr[a]]
+    })
+    return arr
+}
+```
