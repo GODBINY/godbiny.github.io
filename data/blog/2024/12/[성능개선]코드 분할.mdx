@@ -9,17 +9,19 @@ summary: ''
 #### 하나의 번들 파일을 여러 파일로 쪼개는 것.
 #### 굳이 필요하지 않은 부분의 소스는 로딩하지 않는다.
 ### 코드 분할 방법 : 동적 import 사용하기
-기존 - 빌드 시에 번들링이 됨
-    
-    import  { getSum } from '~/common.js'
-    console.log(getSum(1,2));
+기존 : 빌드 시에 번들링이 됨
+````
+import  { getSum } from '~/common.js'
+console.log(getSum(1,2));
+````
 
-동적 import - 런타임에 로드함
-
-    import('getSum').then((module) => {
-        const { getSum } = module
-        console.log(getSum(1,2));
-    })
+동적 import : 런타임에 로드함
+````
+import('getSum').then((module) => {
+	const { getSum } = module
+	console.log(getSum(1,2));
+})
+````
 
 동적 import는 Promise 형태로 반환된다.
 리액트의 경우 lazy, suspense를 제공한다.
