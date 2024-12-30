@@ -50,3 +50,17 @@ function solution(n, arr = []) {
     return solution(3 * n + 1, arr)
 }
 ````
+
+#### 내가 다시 푼 해답
+````
+    function solution(n, arr = []) {
+    arr.push(n)
+    if(n === 1) return arr;
+    return n % 2 ? solution(3*n+1, arr) : solution(n/2, arr);
+    }
+````
+유의할 것 
+- 삼항연산자를 사용할 때 
+  - n % 2 ? return solution(~) : solution(~) 응? 이거 왜 안되지?
+  - return 은 문장(statement)임. 삼항 연산자에는 식(expression) 만 들어갈 수 있음
+  - 따라서 return n % 2 ? return solution(~) : solution(~) 로 해야함.
