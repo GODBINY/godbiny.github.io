@@ -109,18 +109,29 @@ export const Blog = defineDocumentType(() => ({
   },
   computedFields: {
     ...computedFields,
+    slug: {
+      type: 'string',
+      resolve: (doc) => {
+        const datePart = doc._raw.flattenedPath.split('/').slice(1, -1).join('/')
+        return `${datePart}/${slug(doc.title)}`
+      },
+    },
     structuredData: {
       type: 'json',
-      resolve: (doc) => ({
-        '@context': 'https://schema.org',
-        '@type': 'BlogPosting',
-        headline: doc.title,
-        datePublished: doc.date,
-        dateModified: doc.lastmod || doc.date,
-        description: doc.summary,
-        image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
-        url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,
-      }),
+      resolve: (doc) => {
+        const datePart = doc._raw.flattenedPath.split('/').slice(1, -1).join('/')
+        const newSlug = `${datePart}/${slug(doc.title)}`
+        return {
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: doc.title,
+          datePublished: doc.date,
+          dateModified: doc.lastmod || doc.date,
+          description: doc.summary,
+          image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
+          url: `${siteMetadata.siteUrl}/blog/${newSlug}`,
+        }
+      },
     },
   },
 }))
