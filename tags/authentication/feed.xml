@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>GODBIN</title>
+      <link>https://godbiny.github.io/blog</link>
+      <description>갓비니의 기록들</description>
+      <language>ko-kr</language>
+      <managingEditor>undefined (GODBIN)</managingEditor>
+      <webMaster>undefined (GODBIN)</webMaster>
+      <lastBuildDate>Mon, 18 Aug 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://godbiny.github.io/tags/authentication/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://godbiny.github.io/blog/2025/08/session and JWT</guid>
+    <title>Session and JWT</title>
+    <link>https://godbiny.github.io/blog/2025/08/session and JWT</link>
+    <description>인증 상태 관리 - session &amp; JWT(JSON Web Token)</description>
+    <pubDate>Mon, 18 Aug 2025 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>web</category><category>Authentication</category>
+  </item>
+
+    </channel>
+  </rss>

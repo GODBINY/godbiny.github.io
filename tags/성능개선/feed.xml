@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>GODBIN</title>
+      <link>https://godbiny.github.io/blog</link>
+      <description>갓비니의 기록들</description>
+      <language>ko-kr</language>
+      <managingEditor>undefined (GODBIN)</managingEditor>
+      <webMaster>undefined (GODBIN)</webMaster>
+      <lastBuildDate>Mon, 30 Dec 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://godbiny.github.io/tags/성능개선/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[성능개선]코드 분할</guid>
+    <title>[성능개선]코드 분할</title>
+    <link>https://godbiny.github.io/blog/2024/12/[성능개선]코드 분할</link>
+    
+    <pubDate>Mon, 30 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>성능개선</category>
+  </item>
+
+    </channel>
+  </rss>

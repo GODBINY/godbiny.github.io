@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>GODBIN</title>
+      <link>https://godbiny.github.io/blog</link>
+      <description>갓비니의 기록들</description>
+      <language>ko-kr</language>
+      <managingEditor>undefined (GODBIN)</managingEditor>
+      <webMaster>undefined (GODBIN)</webMaster>
+      <lastBuildDate>Sun, 24 Aug 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://godbiny.github.io/tags/neovim/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://godbiny.github.io/blog/2025/08/lazyvim-테마-변경하기</guid>
+    <title>LazyVim 테마 변경하기</title>
+    <link>https://godbiny.github.io/blog/2025/08/lazyvim-테마-변경하기</link>
+    <description>테마 변경하기</description>
+    <pubDate>Sun, 24 Aug 2025 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>neovim</category><category>LazyVim</category>
+  </item>
+
+    </channel>
+  </rss>
