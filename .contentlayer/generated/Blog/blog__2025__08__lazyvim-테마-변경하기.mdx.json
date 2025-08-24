@@ -1,0 +1,49 @@
+{
+  "title": "LazyVim 테마 변경하기",
+  "date": "2025-08-24T00:00:00.000Z",
+  "tags": [
+    "neovim",
+    "LazyVim"
+  ],
+  "draft": false,
+  "summary": "테마 변경하기",
+  "slug": "2025/08/lazyvim-테마-변경하기",
+  "body": {
+    "raw": "### LazyVim 테마 변경하기\n기존 테마에 질릴 때, 테마를 쉽게 고르고 변경하는 곳을 찾았다 ㅎㅎ\n\nhttps://vimcolorschemes.com/\n\n\n```bash\n#테마 설정 lua file 생성(이름 아무거나~)\ntouch ~/.config/nvim/lua/plugins/colorscheme.lua\n```\n\n```lua\nreturn {\n  -- 설치하고 싶은 테마 목록\n  { \"sainnhe/sonokai\"},\n  \n  -- 설치할 것 입력\n  {\n      \"LazyVim/LazyVim\",\n      opts = {\n          colorscheme = \"sonokai\"\n        },\n    },\n  },\n\n```\n\n\n",
+    "code": "var Component=(()=>{var m=Object.create;var l=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var N=Object.getPrototypeOf,k=Object.prototype.hasOwnProperty;var g=(a,n)=>()=>(n||a((n={exports:{}}).exports,n),n.exports),f=(a,n)=>{for(var s in n)l(a,s,{get:n[s],enumerable:!0})},t=(a,n,s,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let c of u(n))!k.call(a,c)&&c!==s&&l(a,c,{get:()=>n[c],enumerable:!(i=p(n,c))||i.enumerable});return a};var v=(a,n,s)=>(s=a!=null?m(N(a)):{},t(n||!a||!a.__esModule?l(s,\"default\",{value:a,enumerable:!0}):s,a)),x=a=>t(l({},\"__esModule\",{value:!0}),a);var r=g((_,o)=>{o.exports=_jsx_runtime});var w={};f(w,{default:()=>h,frontmatter:()=>y});var e=v(r()),y={title:\"LazyVim \\uD14C\\uB9C8 \\uBCC0\\uACBD\\uD558\\uAE30\",slug:\"lazyvim-theme-change\",date:\"2025-08-24\",tags:[\"neovim\",\"LazyVim\"],draft:!1,summary:\"\\uD14C\\uB9C8 \\uBCC0\\uACBD\\uD558\\uAE30\"};function d(a){let n={a:\"a\",code:\"code\",h3:\"h3\",p:\"p\",path:\"path\",pre:\"pre\",span:\"span\",svg:\"svg\",...a.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsxs)(n.h3,{className:\"content-header\",id:\"lazyvim-\\uD14C\\uB9C8-\\uBCC0\\uACBD\\uD558\\uAE30\",children:[(0,e.jsx)(n.a,{href:\"#lazyvim-\\uD14C\\uB9C8-\\uBCC0\\uACBD\\uD558\\uAE30\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(n.span,{className:\"content-header-link\",children:(0,e.jsxs)(n.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(n.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(n.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"LazyVim \\uD14C\\uB9C8 \\uBCC0\\uACBD\\uD558\\uAE30\"]}),(0,e.jsx)(n.p,{children:\"\\uAE30\\uC874 \\uD14C\\uB9C8\\uC5D0 \\uC9C8\\uB9B4 \\uB54C, \\uD14C\\uB9C8\\uB97C \\uC27D\\uAC8C \\uACE0\\uB974\\uACE0 \\uBCC0\\uACBD\\uD558\\uB294 \\uACF3\\uC744 \\uCC3E\\uC558\\uB2E4 \\u314E\\u314E\"}),(0,e.jsx)(n.p,{children:(0,e.jsx)(n.a,{href:\"https://vimcolorschemes.com/\",children:\"https://vimcolorschemes.com/\"})}),(0,e.jsx)(n.pre,{className:\"language-bash\",children:(0,e.jsxs)(n.code,{className:\"code-highlight language-bash\",children:[(0,e.jsxs)(n.span,{className:\"code-line\",children:[(0,e.jsx)(n.span,{className:\"token comment\",children:\"#\\uD14C\\uB9C8 \\uC124\\uC815 lua file \\uC0DD\\uC131(\\uC774\\uB984 \\uC544\\uBB34\\uAC70\\uB098~)\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[(0,e.jsx)(n.span,{className:\"token function\",children:\"touch\"}),` ~/.config/nvim/lua/plugins/colorscheme.lua\n`]})]})}),(0,e.jsx)(n.pre,{className:\"language-lua\",children:(0,e.jsxs)(n.code,{className:\"code-highlight language-lua\",children:[(0,e.jsxs)(n.span,{className:\"code-line\",children:[(0,e.jsx)(n.span,{className:\"token keyword\",children:\"return\"}),\" \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"{\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"  \",(0,e.jsx)(n.span,{className:\"token comment\",children:\"-- \\uC124\\uCE58\\uD558\\uACE0 \\uC2F6\\uC740 \\uD14C\\uB9C8 \\uBAA9\\uB85D\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"  \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"{\"}),\" \",(0,e.jsx)(n.span,{className:\"token string\",children:'\"sainnhe/sonokai\"'}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"}\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\",\"}),`\n`]}),(0,e.jsx)(n.span,{className:\"code-line\",children:`  \n`}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"  \",(0,e.jsx)(n.span,{className:\"token comment\",children:\"-- \\uC124\\uCE58\\uD560 \\uAC83 \\uC785\\uB825\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"  \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"{\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"      \",(0,e.jsx)(n.span,{className:\"token string\",children:'\"LazyVim/LazyVim\"'}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\",\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"      opts \",(0,e.jsx)(n.span,{className:\"token operator\",children:\"=\"}),\" \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"{\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"          colorscheme \",(0,e.jsx)(n.span,{className:\"token operator\",children:\"=\"}),\" \",(0,e.jsx)(n.span,{className:\"token string\",children:'\"sonokai\"'}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"        \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"}\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\",\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"    \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"}\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\",\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"  \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"}\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\",\"}),`\n`]}),(0,e.jsx)(n.span,{className:\"code-line\",children:`\n`})]})})]})}function h(a={}){let{wrapper:n}=a.components||{};return n?(0,e.jsx)(n,{...a,children:(0,e.jsx)(d,{...a})}):d(a)}return x(w);})();\n;return Component;"
+  },
+  "_id": "blog/2025/08/lazyvim-테마-변경하기.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/2025/08/lazyvim-테마-변경하기.mdx",
+    "sourceFileName": "lazyvim-테마-변경하기.mdx",
+    "sourceFileDir": "blog/2025/08",
+    "contentType": "mdx",
+    "flattenedPath": "blog/2025/08/lazyvim-테마-변경하기"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.435,
+    "time": 26100,
+    "words": 87
+  },
+  "path": "blog/2025/08/lazyvim-테마-변경하기",
+  "filePath": "blog/2025/08/lazyvim-테마-변경하기.mdx",
+  "toc": [
+    {
+      "value": "LazyVim 테마 변경하기",
+      "url": "#lazyvim-테마-변경하기",
+      "depth": 3
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "LazyVim 테마 변경하기",
+    "datePublished": "2025-08-24T00:00:00.000Z",
+    "dateModified": "2025-08-24T00:00:00.000Z",
+    "description": "테마 변경하기",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://godbiny.github.io/blog/2025/08/lazyvim-테마-변경하기"
+  }
+}

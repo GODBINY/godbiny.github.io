@@ -1,0 +1,42 @@
+{
+  "title": "자주 쓰는 Git Commands",
+  "date": "2025-07-17T00:00:00.000Z",
+  "tags": [
+    "git"
+  ],
+  "draft": false,
+  "summary": "자주 쓰는 git commands 정리",
+  "slug": "2025/07/git commands",
+  "body": {
+    "raw": "```bash\ngit checkout -b <local branch name> origin/<remote branch name>\n```\n\n\n\n\n\n\n\n\n\n\n\n",
+    "code": "var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var N=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),f=(a,e)=>{for(var t in e)o(a,t,{get:e[t],enumerable:!0})},c=(a,e,t,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let s of g(e))!x.call(a,s)&&s!==t&&o(a,s,{get:()=>e[s],enumerable:!(r=h(e,s))||r.enumerable});return a};var k=(a,e,t)=>(t=a!=null?p(u(a)):{},c(e||!a||!a.__esModule?o(t,\"default\",{value:a,enumerable:!0}):t,a)),b=a=>c(o({},\"__esModule\",{value:!0}),a);var m=N((M,l)=>{l.exports=_jsx_runtime});var j={};f(j,{default:()=>d,frontmatter:()=>_});var n=k(m()),_={title:\"\\uC790\\uC8FC \\uC4F0\\uB294 Git Commands\",date:\"2025-07-17\",tags:[\"git\"],draft:!1,summary:\"\\uC790\\uC8FC \\uC4F0\\uB294 git commands \\uC815\\uB9AC\",slug:\"2025/07/git-commands\"};function i(a){let e={code:\"code\",pre:\"pre\",span:\"span\",...a.components};return(0,n.jsx)(e.pre,{className:\"language-bash\",children:(0,n.jsx)(e.code,{className:\"language-bash code-highlight\",children:(0,n.jsxs)(e.span,{className:\"code-line\",children:[(0,n.jsx)(e.span,{className:\"token function\",children:\"git\"}),\" checkout \",(0,n.jsx)(e.span,{className:\"token parameter variable\",children:\"-b\"}),\" \",(0,n.jsx)(e.span,{className:\"token operator\",children:\"<\"}),\"local branch name\",(0,n.jsx)(e.span,{className:\"token operator\",children:\">\"}),\" origin/\",(0,n.jsx)(e.span,{className:\"token operator\",children:\"<\"}),\"remote branch name\",(0,n.jsx)(e.span,{className:\"token operator\",children:\">\"}),`\n`]})})})}function d(a={}){let{wrapper:e}=a.components||{};return e?(0,n.jsx)(e,{...a,children:(0,n.jsx)(i,{...a})}):i(a)}return b(j);})();\n;return Component;"
+  },
+  "_id": "blog/2025/07/git commands.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/2025/07/git commands.mdx",
+    "sourceFileName": "git commands.mdx",
+    "sourceFileDir": "blog/2025/07",
+    "contentType": "mdx",
+    "flattenedPath": "blog/2025/07/git commands"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.055,
+    "time": 3300,
+    "words": 11
+  },
+  "path": "blog/2025/07/git commands",
+  "filePath": "blog/2025/07/git commands.mdx",
+  "toc": [],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "자주 쓰는 Git Commands",
+    "datePublished": "2025-07-17T00:00:00.000Z",
+    "dateModified": "2025-07-17T00:00:00.000Z",
+    "description": "자주 쓰는 git commands 정리",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://godbiny.github.io/blog/2025/07/git commands"
+  }
+}

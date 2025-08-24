@@ -1,0 +1,36 @@
+---
+title: 'LazyVim 테마 변경하기'
+slug: 'lazyvim-theme-change'
+date: '2025-08-24'
+tags: ['neovim','LazyVim']
+draft: false
+summary: '테마 변경하기'
+---
+### LazyVim 테마 변경하기
+기존 테마에 질릴 때, 테마를 쉽게 고르고 변경하는 곳을 찾았다 ㅎㅎ
+
+https://vimcolorschemes.com/
+
+
+```bash
+#테마 설정 lua file 생성(이름 아무거나~)
+touch ~/.config/nvim/lua/plugins/colorscheme.lua
+```
+
+```lua
+return {
+  -- 설치하고 싶은 테마 목록
+  { "sainnhe/sonokai"},
+  
+  -- 설치할 것 입력
+  {
+      "LazyVim/LazyVim",
+      opts = {
+          colorscheme = "sonokai"
+        },
+    },
+  },
+
+```
+
+

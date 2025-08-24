@@ -1,0 +1,48 @@
+{
+  "title": "Wiki-関数",
+  "date": "2020-01-01T00:00:00.000Z",
+  "tags": [
+    "Wiki"
+  ],
+  "draft": false,
+  "summary": "関数",
+  "slug": "wikiData/Wiki-関数",
+  "body": {
+    "raw": "## replace\n````\nreplace는 새로운 배열을 반환한다. (원본을 바꾸는 것이 아님.)\nString test = 'test';\ntest.replace('test','merong'); // 아무 일도 일어나지 않음\ntest = test.replace('test','merong') // 'merong'\n````",
+    "code": "var Component=(()=>{var m=Object.create;var c=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var N=Object.getPrototypeOf,k=Object.prototype.hasOwnProperty;var g=(a,n)=>()=>(n||a((n={exports:{}}).exports,n),n.exports),x=(a,n)=>{for(var s in n)c(a,s,{get:n[s],enumerable:!0})},r=(a,n,s,l)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let t of u(n))!k.call(a,t)&&t!==s&&c(a,t,{get:()=>n[t],enumerable:!(l=h(n,t))||l.enumerable});return a};var f=(a,n,s)=>(s=a!=null?m(N(a)):{},r(n||!a||!a.__esModule?c(s,\"default\",{value:a,enumerable:!0}):s,a)),w=a=>r(c({},\"__esModule\",{value:!0}),a);var o=g((M,i)=>{i.exports=_jsx_runtime});var _={};x(_,{default:()=>d,frontmatter:()=>j});var e=f(o()),j={title:\"Wiki-\\u95A2\\u6570\",date:\"2020-01-01\",tags:[\"Wiki\"],draft:!1,summary:\"\\u95A2\\u6570\",slug:\"wikiData/Wiki-%E9%96%A2%E6%95%B0\"};function p(a){let n={a:\"a\",code:\"code\",h2:\"h2\",path:\"path\",pre:\"pre\",span:\"span\",svg:\"svg\",...a.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsxs)(n.h2,{className:\"content-header\",id:\"replace\",children:[(0,e.jsx)(n.a,{\"aria-hidden\":\"true\",href:\"#replace\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(n.span,{className:\"content-header-link\",children:(0,e.jsxs)(n.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(n.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(n.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"replace\"]}),(0,e.jsx)(n.pre,{className:\"language-js\",children:(0,e.jsxs)(n.code,{className:\"language-js code-highlight\",children:[(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"replace\\uB294 \\uC0C8\\uB85C\\uC6B4 \\uBC30\\uC5F4\\uC744 \\uBC18\\uD658\\uD55C\\uB2E4\",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\".\"}),\" \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),\"\\uC6D0\\uBCF8\\uC744 \\uBC14\\uAFB8\\uB294 \\uAC83\\uC774 \\uC544\\uB2D8\",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\".\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[(0,e.jsx)(n.span,{className:\"token class-name known-class-name\",children:\"String\"}),\" test \",(0,e.jsx)(n.span,{className:\"token operator\",children:\"=\"}),\" \",(0,e.jsx)(n.span,{className:\"token string\",children:\"'test'\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\";\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"test\",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\".\"}),(0,e.jsx)(n.span,{className:\"token function method property-access\",children:\"replace\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(n.span,{className:\"token string\",children:\"'test'\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\",\"}),(0,e.jsx)(n.span,{className:\"token string\",children:\"'merong'\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\";\"}),\" \",(0,e.jsx)(n.span,{className:\"token comment\",children:\"// \\uC544\\uBB34 \\uC77C\\uB3C4 \\uC77C\\uC5B4\\uB098\\uC9C0 \\uC54A\\uC74C\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"test \",(0,e.jsx)(n.span,{className:\"token operator\",children:\"=\"}),\" test\",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\".\"}),(0,e.jsx)(n.span,{className:\"token function method property-access\",children:\"replace\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(n.span,{className:\"token string\",children:\"'test'\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\",\"}),(0,e.jsx)(n.span,{className:\"token string\",children:\"'merong'\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),\" \",(0,e.jsx)(n.span,{className:\"token comment\",children:\"// 'merong'\"}),`\n`]})]})})]})}function d(a={}){let{wrapper:n}=a.components||{};return n?(0,e.jsx)(n,{...a,children:(0,e.jsx)(p,{...a})}):p(a)}return w(_);})();\n;return Component;"
+  },
+  "_id": "blog/wikiData/Wiki-関数.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/wikiData/Wiki-関数.mdx",
+    "sourceFileName": "Wiki-関数.mdx",
+    "sourceFileDir": "blog/wikiData",
+    "contentType": "mdx",
+    "flattenedPath": "blog/wikiData/Wiki-関数"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.235,
+    "time": 14100,
+    "words": 47
+  },
+  "path": "blog/wikiData/Wiki-関数",
+  "filePath": "blog/wikiData/Wiki-関数.mdx",
+  "toc": [
+    {
+      "value": "replace",
+      "url": "#replace",
+      "depth": 2
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wiki-関数",
+    "datePublished": "2020-01-01T00:00:00.000Z",
+    "dateModified": "2020-01-01T00:00:00.000Z",
+    "description": "関数",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://godbiny.github.io/blog/wikiData/Wiki-関数"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "title": "[성능개선]코드 분할",
+  "date": "2024-12-30T00:00:00.000Z",
+  "tags": [
+    "성능개선"
+  ],
+  "draft": false,
+  "summary": "",
+  "slug": "2024/12/[성능개선]코드 분할",
+  "body": {
+    "raw": "### 코드 분할\n#### 하나의 번들 파일을 여러 파일로 쪼개는 것.\n#### 굳이 필요하지 않은 부분의 소스는 로딩하지 않는다.\n### 코드 분할 방법 : 동적 import 사용하기\n기존 : 빌드 시에 번들링이 됨\n````\nimport  { getSum } from '~/common.js'\nconsole.log(getSum(1,2));\n````\n\n동적 import : 런타임에 로드함\n````\nimport('getSum').then((module) => {\n\tconst { getSum } = module\n\tconsole.log(getSum(1,2));\n})\n````\n\n동적 import는 Promise 형태로 반환된다.\n리액트의 경우 lazy, suspense를 제공한다.",
+    "code": "var Component=(()=>{var p=Object.create;var c=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var N=Object.getPrototypeOf,k=Object.prototype.hasOwnProperty;var g=(a,n)=>()=>(n||a((n={exports:{}}).exports,n),n.exports),w=(a,n)=>{for(var s in n)c(a,s,{get:n[s],enumerable:!0})},o=(a,n,s,t)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let l of u(n))!k.call(a,l)&&l!==s&&c(a,l,{get:()=>n[l],enumerable:!(t=m(n,l))||t.enumerable});return a};var f=(a,n,s)=>(s=a!=null?p(N(a)):{},o(n||!a||!a.__esModule?c(s,\"default\",{value:a,enumerable:!0}):s,a)),x=a=>o(c({},\"__esModule\",{value:!0}),a);var r=g((y,i)=>{i.exports=_jsx_runtime});var M={};w(M,{default:()=>h,frontmatter:()=>v});var e=f(r()),v={slug:\"2024/12/[\\uC131\\uB2A5\\uAC1C\\uC120]\\uCF54\\uB4DC \\uBD84\\uD560\",title:\"[\\uC131\\uB2A5\\uAC1C\\uC120]\\uCF54\\uB4DC \\uBD84\\uD560\",date:\"2024-12-30\",tags:[\"\\uC131\\uB2A5\\uAC1C\\uC120\"],draft:!1,summary:\"\"};function d(a){let n={a:\"a\",code:\"code\",h3:\"h3\",h4:\"h4\",p:\"p\",path:\"path\",pre:\"pre\",span:\"span\",svg:\"svg\",...a.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsxs)(n.h3,{className:\"content-header\",id:\"\\uCF54\\uB4DC-\\uBD84\\uD560\",children:[(0,e.jsx)(n.a,{\"aria-hidden\":\"true\",href:\"#\\uCF54\\uB4DC-\\uBD84\\uD560\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(n.span,{className:\"content-header-link\",children:(0,e.jsxs)(n.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(n.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(n.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uCF54\\uB4DC \\uBD84\\uD560\"]}),(0,e.jsxs)(n.h4,{className:\"content-header\",id:\"\\uD558\\uB098\\uC758-\\uBC88\\uB4E4-\\uD30C\\uC77C\\uC744-\\uC5EC\\uB7EC-\\uD30C\\uC77C\\uB85C-\\uCABC\\uAC1C\\uB294-\\uAC83\",children:[(0,e.jsx)(n.a,{\"aria-hidden\":\"true\",href:\"#\\uD558\\uB098\\uC758-\\uBC88\\uB4E4-\\uD30C\\uC77C\\uC744-\\uC5EC\\uB7EC-\\uD30C\\uC77C\\uB85C-\\uCABC\\uAC1C\\uB294-\\uAC83\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(n.span,{className:\"content-header-link\",children:(0,e.jsxs)(n.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(n.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(n.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uD558\\uB098\\uC758 \\uBC88\\uB4E4 \\uD30C\\uC77C\\uC744 \\uC5EC\\uB7EC \\uD30C\\uC77C\\uB85C \\uCABC\\uAC1C\\uB294 \\uAC83.\"]}),(0,e.jsxs)(n.h4,{className:\"content-header\",id:\"\\uAD73\\uC774-\\uD544\\uC694\\uD558\\uC9C0-\\uC54A\\uC740-\\uBD80\\uBD84\\uC758-\\uC18C\\uC2A4\\uB294-\\uB85C\\uB529\\uD558\\uC9C0-\\uC54A\\uB294\\uB2E4\",children:[(0,e.jsx)(n.a,{\"aria-hidden\":\"true\",href:\"#\\uAD73\\uC774-\\uD544\\uC694\\uD558\\uC9C0-\\uC54A\\uC740-\\uBD80\\uBD84\\uC758-\\uC18C\\uC2A4\\uB294-\\uB85C\\uB529\\uD558\\uC9C0-\\uC54A\\uB294\\uB2E4\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(n.span,{className:\"content-header-link\",children:(0,e.jsxs)(n.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(n.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(n.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uAD73\\uC774 \\uD544\\uC694\\uD558\\uC9C0 \\uC54A\\uC740 \\uBD80\\uBD84\\uC758 \\uC18C\\uC2A4\\uB294 \\uB85C\\uB529\\uD558\\uC9C0 \\uC54A\\uB294\\uB2E4.\"]}),(0,e.jsxs)(n.h3,{className:\"content-header\",id:\"\\uCF54\\uB4DC-\\uBD84\\uD560-\\uBC29\\uBC95--\\uB3D9\\uC801-import-\\uC0AC\\uC6A9\\uD558\\uAE30\",children:[(0,e.jsx)(n.a,{\"aria-hidden\":\"true\",href:\"#\\uCF54\\uB4DC-\\uBD84\\uD560-\\uBC29\\uBC95--\\uB3D9\\uC801-import-\\uC0AC\\uC6A9\\uD558\\uAE30\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(n.span,{className:\"content-header-link\",children:(0,e.jsxs)(n.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(n.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(n.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uCF54\\uB4DC \\uBD84\\uD560 \\uBC29\\uBC95 : \\uB3D9\\uC801 import \\uC0AC\\uC6A9\\uD558\\uAE30\"]}),(0,e.jsx)(n.p,{children:\"\\uAE30\\uC874 : \\uBE4C\\uB4DC \\uC2DC\\uC5D0 \\uBC88\\uB4E4\\uB9C1\\uC774 \\uB428\"}),(0,e.jsx)(n.pre,{className:\"language-js\",children:(0,e.jsxs)(n.code,{className:\"language-js code-highlight\",children:[(0,e.jsxs)(n.span,{className:\"code-line\",children:[(0,e.jsx)(n.span,{className:\"token keyword module\",children:\"import\"}),\"  \",(0,e.jsxs)(n.span,{className:\"token imports\",children:[(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"{\"}),\" getSum \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"}\"})]}),\" \",(0,e.jsx)(n.span,{className:\"token keyword module\",children:\"from\"}),\" \",(0,e.jsx)(n.span,{className:\"token string\",children:\"'~/common.js'\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[(0,e.jsx)(n.span,{className:\"token class-name console\",children:\"console\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\".\"}),(0,e.jsx)(n.span,{className:\"token function method property-access\",children:\"log\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(n.span,{className:\"token function\",children:\"getSum\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(n.span,{className:\"token number\",children:\"1\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\",\"}),(0,e.jsx)(n.span,{className:\"token number\",children:\"2\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\";\"}),`\n`]})]})}),(0,e.jsx)(n.p,{children:\"\\uB3D9\\uC801 import : \\uB7F0\\uD0C0\\uC784\\uC5D0 \\uB85C\\uB4DC\\uD568\"}),(0,e.jsx)(n.pre,{className:\"language-js\",children:(0,e.jsxs)(n.code,{className:\"language-js code-highlight\",children:[(0,e.jsxs)(n.span,{className:\"code-line\",children:[(0,e.jsx)(n.span,{className:\"token keyword module\",children:\"import\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(n.span,{className:\"token string\",children:\"'getSum'\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\".\"}),(0,e.jsx)(n.span,{className:\"token function method property-access\",children:\"then\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(n.span,{className:\"token parameter\",children:\"module\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),\" \",(0,e.jsx)(n.span,{className:\"token operator arrow\",children:\"=>\"}),\" \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"{\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"\t\",(0,e.jsx)(n.span,{className:\"token keyword\",children:\"const\"}),\" \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"{\"}),\" getSum \",(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"}\"}),\" \",(0,e.jsx)(n.span,{className:\"token operator\",children:\"=\"}),` module\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[\"\t\",(0,e.jsx)(n.span,{className:\"token class-name console\",children:\"console\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\".\"}),(0,e.jsx)(n.span,{className:\"token function method property-access\",children:\"log\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(n.span,{className:\"token function\",children:\"getSum\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(n.span,{className:\"token number\",children:\"1\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\",\"}),(0,e.jsx)(n.span,{className:\"token number\",children:\"2\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\";\"}),`\n`]}),(0,e.jsxs)(n.span,{className:\"code-line\",children:[(0,e.jsx)(n.span,{className:\"token punctuation\",children:\"}\"}),(0,e.jsx)(n.span,{className:\"token punctuation\",children:\")\"}),`\n`]})]})}),(0,e.jsx)(n.p,{children:\"\\uB3D9\\uC801 import\\uB294 Promise \\uD615\\uD0DC\\uB85C \\uBC18\\uD658\\uB41C\\uB2E4. \\uB9AC\\uC561\\uD2B8\\uC758 \\uACBD\\uC6B0 lazy, suspense\\uB97C \\uC81C\\uACF5\\uD55C\\uB2E4.\"})]})}function h(a={}){let{wrapper:n}=a.components||{};return n?(0,e.jsx)(n,{...a,children:(0,e.jsx)(d,{...a})}):d(a)}return x(M);})();\n;return Component;"
+  },
+  "_id": "blog/2024/12/[성능개선]코드 분할.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/2024/12/[성능개선]코드 분할.mdx",
+    "sourceFileName": "[성능개선]코드 분할.mdx",
+    "sourceFileDir": "blog/2024/12",
+    "contentType": "mdx",
+    "flattenedPath": "blog/2024/12/[성능개선]코드 분할"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.615,
+    "time": 36900,
+    "words": 123
+  },
+  "path": "blog/2024/12/[성능개선]코드 분할",
+  "filePath": "blog/2024/12/[성능개선]코드 분할.mdx",
+  "toc": [
+    {
+      "value": "코드 분할",
+      "url": "#코드-분할",
+      "depth": 3
+    },
+    {
+      "value": "하나의 번들 파일을 여러 파일로 쪼개는 것.",
+      "url": "#하나의-번들-파일을-여러-파일로-쪼개는-것",
+      "depth": 4
+    },
+    {
+      "value": "굳이 필요하지 않은 부분의 소스는 로딩하지 않는다.",
+      "url": "#굳이-필요하지-않은-부분의-소스는-로딩하지-않는다",
+      "depth": 4
+    },
+    {
+      "value": "코드 분할 방법 : 동적 import 사용하기",
+      "url": "#코드-분할-방법--동적-import-사용하기",
+      "depth": 3
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "[성능개선]코드 분할",
+    "datePublished": "2024-12-30T00:00:00.000Z",
+    "dateModified": "2024-12-30T00:00:00.000Z",
+    "description": "",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://godbiny.github.io/blog/2024/12/[성능개선]코드 분할"
+  }
+}

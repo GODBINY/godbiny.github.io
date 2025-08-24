@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>GODBIN</title>
+      <link>https://godbiny.github.io/blog</link>
+      <description>갓비니의 기록들</description>
+      <language>ko-kr</language>
+      <managingEditor>undefined (GODBIN)</managingEditor>
+      <webMaster>undefined (GODBIN)</webMaster>
+      <lastBuildDate>Thu, 17 Jul 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://godbiny.github.io/tags/git/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://godbiny.github.io/blog/2025/07/git commands</guid>
+    <title>자주 쓰는 Git Commands</title>
+    <link>https://godbiny.github.io/blog/2025/07/git commands</link>
+    <description>자주 쓰는 git commands 정리</description>
+    <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>git</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -1,0 +1,374 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>GODBIN</title>
+      <link>https://godbiny.github.io/blog</link>
+      <description>갓비니의 기록들</description>
+      <language>ko-kr</language>
+      <managingEditor>undefined (GODBIN)</managingEditor>
+      <webMaster>undefined (GODBIN)</webMaster>
+      <lastBuildDate>Fri, 01 Nov 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://godbiny.github.io/tags/coding-test/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/11/[프로그래머스][JavaScript]flag에 따라 다른 값 반환하기</guid>
+    <title>[프로그래머스][JavaScript]flag에 따라 다른 값 반환하기</title>
+    <link>https://godbiny.github.io/blog/2024/11/[프로그래머스][JavaScript]flag에 따라 다른 값 반환하기</link>
+    
+    <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/11/[프로그래머스][JavaScript]등차수열의 특정한 항만 더하기</guid>
+    <title>[프로그래머스][JavaScript]등차수열의 특정한 항만 더하기</title>
+    <link>https://godbiny.github.io/blog/2024/11/[프로그래머스][JavaScript]등차수열의 특정한 항만 더하기</link>
+    
+    <pubDate>Sun, 03 Nov 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/11/[프로그래머스][JavaScript]코드 처리하기</guid>
+    <title>[프로그래머스][JavaScript]코드 처리하기</title>
+    <link>https://godbiny.github.io/blog/2024/11/[프로그래머스][JavaScript]코드 처리하기</link>
+    
+    <pubDate>Sat, 02 Nov 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]a와 b 출력하기</guid>
+    <title>[프로그래머스][JavaScript]a와 b 출력하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]a와 b 출력하기</link>
+    
+    <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]n의 배수</guid>
+    <title>[프로그래머스][JavaScript]n의 배수</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]n의 배수</link>
+    
+    <pubDate>Sun, 20 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]공배수</guid>
+    <title>[프로그래머스][JavaScript]공배수</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]공배수</link>
+    
+    <pubDate>Sun, 20 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]대소문자 바꿔서 출력하기</guid>
+    <title>[프로그래머스][JavaScript]대소문자 바꿔서 출력하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]대소문자 바꿔서 출력하기</link>
+    
+    <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]더 크게 합치기</guid>
+    <title>[프로그래머스][JavaScript]더 크게 합치기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]더 크게 합치기</link>
+    
+    <pubDate>Sun, 20 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]덧셈식 출력하기</guid>
+    <title>[프로그래머스][JavaScript]덧셈식 출력하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]덧셈식 출력하기</link>
+    
+    <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]두 수의 연산값 비교하기</guid>
+    <title>[프로그래머스][JavaScript]두 수의 연산값 비교하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]두 수의 연산값 비교하기</link>
+    
+    <pubDate>Sun, 20 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기</guid>
+    <title>[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기</link>
+    
+    <pubDate>Wed, 16 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 겹쳐쓰기</guid>
+    <title>[프로그래머스][JavaScript]문자열 겹쳐쓰기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 겹쳐쓰기</link>
+    
+    <pubDate>Wed, 16 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 곱하기</guid>
+    <title>[프로그래머스][JavaScript]문자열 곱하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 곱하기</link>
+    
+    <pubDate>Wed, 16 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 돌리기</guid>
+    <title>[프로그래머스][JavaScript]문자열 돌리기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 돌리기</link>
+    
+    <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 반복해서 출력하기</guid>
+    <title>[프로그래머스][JavaScript]문자열 반복해서 출력하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 반복해서 출력하기</link>
+    
+    <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 붙여서 출력하기</guid>
+    <title>[프로그래머스][JavaScript]문자열 붙여서 출력하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 붙여서 출력하기</link>
+    
+    <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 섞기</guid>
+    <title>[프로그래머스][JavaScript]문자열 섞기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 섞기</link>
+    
+    <pubDate>Wed, 16 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 출력하기</guid>
+    <title>[프로그래머스][JavaScript]문자열 출력하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자열 출력하기</link>
+    
+    <pubDate>Sun, 13 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]조건 문자열</guid>
+    <title>[프로그래머스][JavaScript]조건 문자열</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]조건 문자열</link>
+    
+    <pubDate>Sun, 20 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]특수문자 출력하기</guid>
+    <title>[프로그래머스][JavaScript]특수문자 출력하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]특수문자 출력하기</link>
+    
+    <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]홀짝 구분하기</guid>
+    <title>[프로그래머스][JavaScript]홀짝 구분하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]홀짝 구분하기</link>
+    
+    <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]홀짝에 따라 다른 값 반환하기</guid>
+    <title>[프로그래머스][JavaScript]홀짝에 따라 다른 값 반환하기</title>
+    <link>https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]홀짝에 따라 다른 값 반환하기</link>
+    
+    <pubDate>Sun, 20 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]rny_string</guid>
+    <title>[프로그래머스][JavaScript]rny_string</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]rny_string</link>
+    
+    <pubDate>Wed, 04 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]뒤에서 5등까지</guid>
+    <title>[프로그래머스][JavaScript]뒤에서 5등까지</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]뒤에서 5등까지</link>
+    
+    <pubDate>Mon, 02 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]마지막 두 원소</guid>
+    <title>[프로그래머스][JavaScript]마지막 두 원소</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]마지막 두 원소</link>
+    
+    <pubDate>Sat, 07 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]배열 비교하기</guid>
+    <title>[프로그래머스][JavaScript]배열 비교하기</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]배열 비교하기</link>
+    
+    <pubDate>Tue, 03 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수 조작하기</guid>
+    <title>[프로그래머스][JavaScript]수 조작하기</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수 조작하기</link>
+    
+    <pubDate>Sun, 08 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수 조작하기2</guid>
+    <title>[프로그래머스][JavaScript]수 조작하기2</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수 조작하기2</link>
+    
+    <pubDate>Sun, 08 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수열과 구간 쿼리 2</guid>
+    <title>[프로그래머스][JavaScript]수열과 구간 쿼리 2</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수열과 구간 쿼리 2</link>
+    
+    <pubDate>Wed, 11 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수열과 구간 쿼리 3</guid>
+    <title>[프로그래머스][JavaScript]수열과 구간 쿼리 3</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수열과 구간 쿼리 3</link>
+    
+    <pubDate>Mon, 09 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수열과 구간 쿼리 4</guid>
+    <title>[프로그래머스][JavaScript]수열과 구간 쿼리 4</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]수열과 구간 쿼리 4</link>
+    
+    <pubDate>Tue, 31 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]원소들의 곱과합</guid>
+    <title>[프로그래머스][JavaScript]원소들의 곱과합</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]원소들의 곱과합</link>
+    
+    <pubDate>Thu, 05 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]이어 붙인 수</guid>
+    <title>[프로그래머스][JavaScript]이어 붙인 수</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]이어 붙인 수</link>
+    
+    <pubDate>Fri, 06 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]주사위 게임 2</guid>
+    <title>[프로그래머스][JavaScript]주사위 게임2</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]주사위 게임 2</link>
+    
+    <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]카운트 업</guid>
+    <title>[프로그래머스][JavaScript]카운트 업</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]카운트 업</link>
+    
+    <pubDate>Tue, 17 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]콜라츠 수열 만들기</guid>
+    <title>[프로그래머스][JavaScript]콜라츠 수열 만들기</title>
+    <link>https://godbiny.github.io/blog/2024/12/[프로그래머스][JavaScript]콜라츠 수열 만들기</link>
+    
+    <pubDate>Sun, 29 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Algorithm</category><category>Coding Test</category><category>JavaScript</category>
+  </item>
+
+    </channel>
+  </rss>

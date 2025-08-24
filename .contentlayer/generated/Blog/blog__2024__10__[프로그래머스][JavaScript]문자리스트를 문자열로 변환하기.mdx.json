@@ -1,0 +1,65 @@
+{
+  "title": "[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기",
+  "date": "2024-10-16T00:00:00.000Z",
+  "tags": [
+    "Algorithm",
+    "Coding Test",
+    "JavaScript"
+  ],
+  "draft": false,
+  "summary": "",
+  "slug": "2024/10/[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기",
+  "body": {
+    "raw": "#### 문제 설명\n    문자들이 담겨있는 배열 arr가 주어집니다. arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.\n#### 제한사항\n    1 ≤ arr의 길이 ≤ 200\n    arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.\n#### 입출력 예\n|arr| result |\n|---|-------|\n|[\"a\",\"b\",\"c\"]| \"abc\"|\n\n---\n#### 풀이\n````\nfunction solution(arr) {ㄴ\n    return arr.join('');\n}\n````\n> 이게 뭐람!",
+    "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var N=Object.getPrototypeOf,w=Object.prototype.hasOwnProperty;var g=(n,a)=>()=>(a||n((a={exports:{}}).exports,a),a.exports),k=(n,a)=>{for(var l in a)r(n,l,{get:a[l],enumerable:!0})},s=(n,a,l,c)=>{if(a&&typeof a==\"object\"||typeof a==\"function\")for(let t of u(a))!w.call(n,t)&&t!==l&&r(n,t,{get:()=>a[t],enumerable:!(c=m(a,t))||c.enumerable});return n};var x=(n,a,l)=>(l=n!=null?p(N(n)):{},s(a||!n||!n.__esModule?r(l,\"default\",{value:n,enumerable:!0}):l,n)),f=n=>s(r({},\"__esModule\",{value:!0}),n);var d=g((j,i)=>{i.exports=_jsx_runtime});var b={};k(b,{default:()=>o,frontmatter:()=>v});var e=x(d()),v={slug:\"2024/10/[\\uD504\\uB85C\\uADF8\\uB798\\uBA38\\uC2A4][JavaScript]\\uBB38\\uC790\\uB9AC\\uC2A4\\uD2B8\\uB97C \\uBB38\\uC790\\uC5F4\\uB85C \\uBCC0\\uD658\\uD558\\uAE30\",title:\"[\\uD504\\uB85C\\uADF8\\uB798\\uBA38\\uC2A4][JavaScript]\\uBB38\\uC790\\uB9AC\\uC2A4\\uD2B8\\uB97C \\uBB38\\uC790\\uC5F4\\uB85C \\uBCC0\\uD658\\uD558\\uAE30\",date:\"2024-10-16\",tags:[\"Algorithm\",\"Coding Test\",\"JavaScript\"],draft:!1,summary:\"\"};function h(n){let a={a:\"a\",blockquote:\"blockquote\",code:\"code\",h4:\"h4\",hr:\"hr\",p:\"p\",path:\"path\",pre:\"pre\",span:\"span\",svg:\"svg\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",...n.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsxs)(a.h4,{className:\"content-header\",id:\"\\uBB38\\uC81C-\\uC124\\uBA85\",children:[(0,e.jsx)(a.a,{\"aria-hidden\":\"true\",href:\"#\\uBB38\\uC81C-\\uC124\\uBA85\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(a.span,{className:\"content-header-link\",children:(0,e.jsxs)(a.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(a.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(a.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uBB38\\uC81C \\uC124\\uBA85\"]}),(0,e.jsx)(a.p,{children:\"\\uBB38\\uC790\\uB4E4\\uC774 \\uB2F4\\uACA8\\uC788\\uB294 \\uBC30\\uC5F4 arr\\uAC00 \\uC8FC\\uC5B4\\uC9D1\\uB2C8\\uB2E4. arr\\uC758 \\uC6D0\\uC18C\\uB4E4\\uC744 \\uC21C\\uC11C\\uB300\\uB85C \\uC774\\uC5B4 \\uBD99\\uC778 \\uBB38\\uC790\\uC5F4\\uC744 return \\uD558\\uB294 solution\\uD568\\uC218\\uB97C \\uC791\\uC131\\uD574 \\uC8FC\\uC138\\uC694.\"}),(0,e.jsxs)(a.h4,{className:\"content-header\",id:\"\\uC81C\\uD55C\\uC0AC\\uD56D\",children:[(0,e.jsx)(a.a,{\"aria-hidden\":\"true\",href:\"#\\uC81C\\uD55C\\uC0AC\\uD56D\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(a.span,{className:\"content-header-link\",children:(0,e.jsxs)(a.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(a.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(a.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uC81C\\uD55C\\uC0AC\\uD56D\"]}),(0,e.jsx)(a.p,{children:\"1 \\u2264 arr\\uC758 \\uAE38\\uC774 \\u2264 200 arr\\uC758 \\uC6D0\\uC18C\\uB294 \\uC804\\uBD80 \\uC54C\\uD30C\\uBCB3 \\uC18C\\uBB38\\uC790\\uB85C \\uC774\\uB8E8\\uC5B4\\uC9C4 \\uAE38\\uC774\\uAC00 1\\uC778 \\uBB38\\uC790\\uC5F4\\uC785\\uB2C8\\uB2E4.\"}),(0,e.jsxs)(a.h4,{className:\"content-header\",id:\"\\uC785\\uCD9C\\uB825-\\uC608\",children:[(0,e.jsx)(a.a,{\"aria-hidden\":\"true\",href:\"#\\uC785\\uCD9C\\uB825-\\uC608\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(a.span,{className:\"content-header-link\",children:(0,e.jsxs)(a.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(a.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(a.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uC785\\uCD9C\\uB825 \\uC608\"]}),(0,e.jsxs)(a.table,{children:[(0,e.jsx)(a.thead,{children:(0,e.jsxs)(a.tr,{children:[(0,e.jsx)(a.th,{children:\"arr\"}),(0,e.jsx)(a.th,{children:\"result\"})]})}),(0,e.jsx)(a.tbody,{children:(0,e.jsxs)(a.tr,{children:[(0,e.jsx)(a.td,{children:'[\"a\",\"b\",\"c\"]'}),(0,e.jsx)(a.td,{children:'\"abc\"'})]})})]}),(0,e.jsx)(a.hr,{}),(0,e.jsxs)(a.h4,{className:\"content-header\",id:\"\\uD480\\uC774\",children:[(0,e.jsx)(a.a,{\"aria-hidden\":\"true\",href:\"#\\uD480\\uC774\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(a.span,{className:\"content-header-link\",children:(0,e.jsxs)(a.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(a.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(a.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uD480\\uC774\"]}),(0,e.jsx)(a.pre,{className:\"language-js\",children:(0,e.jsxs)(a.code,{className:\"language-js code-highlight\",children:[(0,e.jsxs)(a.span,{className:\"code-line\",children:[(0,e.jsx)(a.span,{className:\"token keyword\",children:\"function\"}),\" \",(0,e.jsx)(a.span,{className:\"token function\",children:\"solution\"}),(0,e.jsx)(a.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(a.span,{className:\"token parameter\",children:\"arr\"}),(0,e.jsx)(a.span,{className:\"token punctuation\",children:\")\"}),\" \",(0,e.jsx)(a.span,{className:\"token punctuation\",children:\"{\"}),`\\u3134\n`]}),(0,e.jsxs)(a.span,{className:\"code-line\",children:[\"    \",(0,e.jsx)(a.span,{className:\"token keyword control-flow\",children:\"return\"}),\" arr\",(0,e.jsx)(a.span,{className:\"token punctuation\",children:\".\"}),(0,e.jsx)(a.span,{className:\"token function method property-access\",children:\"join\"}),(0,e.jsx)(a.span,{className:\"token punctuation\",children:\"(\"}),(0,e.jsx)(a.span,{className:\"token string\",children:\"''\"}),(0,e.jsx)(a.span,{className:\"token punctuation\",children:\")\"}),(0,e.jsx)(a.span,{className:\"token punctuation\",children:\";\"}),`\n`]}),(0,e.jsxs)(a.span,{className:\"code-line\",children:[(0,e.jsx)(a.span,{className:\"token punctuation\",children:\"}\"}),`\n`]})]})}),(0,e.jsx)(a.blockquote,{children:(0,e.jsx)(a.p,{children:\"\\uC774\\uAC8C \\uBB50\\uB78C!\"})})]})}function o(n={}){let{wrapper:a}=n.components||{};return a?(0,e.jsx)(a,{...n,children:(0,e.jsx)(h,{...n})}):h(n)}return f(b);})();\n;return Component;"
+  },
+  "_id": "blog/2024/10/[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/2024/10/[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기.mdx",
+    "sourceFileName": "[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기.mdx",
+    "sourceFileDir": "blog/2024/10",
+    "contentType": "mdx",
+    "flattenedPath": "blog/2024/10/[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.6,
+    "time": 36000,
+    "words": 120
+  },
+  "path": "blog/2024/10/[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기",
+  "filePath": "blog/2024/10/[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기.mdx",
+  "toc": [
+    {
+      "value": "문제 설명",
+      "url": "#문제-설명-10",
+      "depth": 4
+    },
+    {
+      "value": "제한사항",
+      "url": "#제한사항-10",
+      "depth": 4
+    },
+    {
+      "value": "입출력 예",
+      "url": "#입출력-예-10",
+      "depth": 4
+    },
+    {
+      "value": "풀이",
+      "url": "#풀이-9",
+      "depth": 4
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기",
+    "datePublished": "2024-10-16T00:00:00.000Z",
+    "dateModified": "2024-10-16T00:00:00.000Z",
+    "description": "",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://godbiny.github.io/blog/2024/10/[프로그래머스][JavaScript]문자리스트를 문자열로 변환하기"
+  }
+}

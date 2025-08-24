@@ -1,0 +1,44 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>GODBIN</title>
+      <link>https://godbiny.github.io/blog</link>
+      <description>갓비니의 기록들</description>
+      <language>ko-kr</language>
+      <managingEditor>undefined (GODBIN)</managingEditor>
+      <webMaster>undefined (GODBIN)</webMaster>
+      <lastBuildDate>Mon, 30 Sep 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://godbiny.github.io/tags/daily-log/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/09/AWS CloudFront cache polices</guid>
+    <title>AWS CloudFront cache polices</title>
+    <link>https://godbiny.github.io/blog/2024/09/AWS CloudFront cache polices</link>
+    <description>image, video fallback 작업을 진행하며 알게 된 것들 - AWS CloudFront cache polices</description>
+    <pubDate>Mon, 30 Sep 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>daily log</category><category>web</category><category>AWS</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/10/개발자 도구 Media tab 에서 의미하는 것들</guid>
+    <title>개발자 도구 Network Tab + Media 에서 의미하는 것들</title>
+    <link>https://godbiny.github.io/blog/2024/10/개발자 도구 Media tab 에서 의미하는 것들</link>
+    <description>image, video fallback 작업을 진행하며 알게 된 것들 - 개발자도구 Network Tab &amp; Media</description>
+    <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>daily log</category><category>web</category>
+  </item>
+
+  <item>
+    <guid>https://godbiny.github.io/blog/2025/07/SEO</guid>
+    <title>SEO(검색엔진 최적화)</title>
+    <link>https://godbiny.github.io/blog/2025/07/SEO</link>
+    <description>@nuxt/sitemap으로 sitemap 생성하기</description>
+    <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>daily log</category><category>web</category><category>seo</category>
+  </item>
+
+    </channel>
+  </rss>

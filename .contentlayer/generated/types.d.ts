@@ -47,6 +47,7 @@ export type Blog = {
   layout?: string | undefined
   bibliography?: string | undefined
   canonicalUrl?: string | undefined
+  slug: string
   /** MDX file body */
   body: MDX
   readingTime: json

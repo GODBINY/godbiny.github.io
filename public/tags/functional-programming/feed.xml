@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>GODBIN</title>
+      <link>https://godbiny.github.io/blog</link>
+      <description>갓비니의 기록들</description>
+      <language>ko-kr</language>
+      <managingEditor>undefined (GODBIN)</managingEditor>
+      <webMaster>undefined (GODBIN)</webMaster>
+      <lastBuildDate>Sat, 14 Dec 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://godbiny.github.io/tags/functional-programming/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://godbiny.github.io/blog/2024/12/[함수형프로그래밍]함수형 프로그래밍 개념</guid>
+    <title>[함수형프로그래밍]함수형 프로그래밍의 기본</title>
+    <link>https://godbiny.github.io/blog/2024/12/[함수형프로그래밍]함수형 프로그래밍 개념</link>
+    
+    <pubDate>Sat, 14 Dec 2024 00:00:00 GMT</pubDate>
+    <author>undefined (GODBIN)</author>
+    <category>Functional Programming</category>
+  </item>
+
+    </channel>
+  </rss>
