@@ -1,0 +1,92 @@
+---
+title: 'AWS Presigned URL · CloudFront Signed URL 403 오류: 인코딩 문제 정리'
+slug: '2025/08/aws-encoding-problem'
+date: '2025-08-24'
+tags: ['aws']
+draft: true 
+summary: 'AWS Signature V4와 URL 인코딩: 왜 403이 발생할까?'
+---
+S3 Presigned URL & CloudFront 403 오류, 인코딩 문제 해결기 (Nuxt.js + Spring Boot + PostgreSQL)
+
+1. 배경
+
+우리 서비스는 Nuxt.js(프론트엔드) + Spring Boot(백엔드) + PostgreSQL(DB) 조합으로 운영되고 있다.
+이미지는 AWS S3 + CloudFront를 통해 업로드/조회하고 있었는데, 기존에는 단순히 퍼블릭 URL을 DB에 저장해 사용했다.
+
+하지만 ISMS 조치로 인해 보안 강화를 하면서 Access Key + Secret Key 기반 Presigned URL 방식으로 전환하게 되었다.
+그 순간부터 예기치 못한 문제가 발생했다.
+
+⸻
+
+2. 문제 상황
+	•	기존에는 DB에 원본 파일명 그대로 저장 → 퍼블릭 CDN 주소로 접근 문제 없음
+	•	Presigned URL로 전환 후, 한글/괄호/앰퍼샌드 등이 들어간 파일명에서
+403 SignatureDoesNotMatch 오류가 발생
+
+즉, S3에 올릴 때는 잘 올라가는데, URL 접근만 하면 바로 깨졌다.
+
+⸻
+
+3. 원인
+
+AWS Signature V4는 Canonical Request에 포함되는 **경로(path)와 쿼리(query)**를
+RFC 3986 방식으로 퍼센트 인코딩해 서명한다.
+	•	공백 → %20 (※ + 불가)
+	•	(,) → %28,%29
+	•	& → %26
+	•	한글 → UTF-8 → 퍼센트 인코딩 (예: 가 → %EA%B0%80)
+
+문제는,
+	•	DB에는 원본 파일명(상품(신상)&특가.jpg)이 들어가 있고
+	•	Presigned URL을 만들 때, SDK와 브라우저가 인코딩을 이중/불일치로 처리하면서
+	•	서명에 사용된 문자열 ≠ 실제 요청된 URL → 403 발생
+
+⸻
+
+4. 해결 방법
+
+핵심은 인코딩 책임을 서버(Spring Boot) 한 군데에만 둔다는 것이다.
+프론트(Nuxt.js)는 원본 파일명만 서버로 넘기고,
+Spring Boot가 세그먼트 단위로 인코딩된 키를 생성 → S3 Presigned URL 발급 → DB 저장까지 전담한다.
+
+DB 설계
+	•	file_key_encoded : 실제 S3에 저장된 인코딩된 키
+	•	original_filename : 사용자에게 보여줄 원본 파일명
+
+업로드 흐름
+	1.	Nuxt.js에서 파일 업로드 요청 → 원본 파일명 전달
+	2.	Spring Boot:
+	•	경로/파일명 세그먼트 단위 퍼센트 인코딩
+	•	인코딩된 키로 Presigned URL 생성
+	•	DB에 file_key_encoded, original_filename 저장
+	3.	Nuxt.js: 응답받은 Presigned URL로 S3에 PUT 업로드
+
+조회/다운로드
+	•	이미지 조회: file_key_encoded 기반 Presigned URL 생성
+	•	다운로드: Content-Disposition: filename="original_filename" 헤더 추가해 UX 보존
+
+⸻
+
+5. 기존 데이터 마이그레이션
+
+이미 DB에 원본 파일명이 저장된 상태라면 다음 절차로 치환했다.
+	1.	DB에서 특수문자 포함 레코드 조회
+	2.	서버 코드로 인코딩된 file_key_encoded 생성
+	3.	S3 copyObject (원본 → 인코딩된 키) 후 deleteObject
+	4.	DB 업데이트 → 참조 컬럼을 file_key_encoded로 전환
+
+⸻
+
+6. 실무 팁
+	•	인코딩은 반드시 서버에서만
+	•	DB에는 원본 파일명과 인코딩된 키를 분리 저장
+	•	CloudFront 사용 시 쿼리스트링/경로 그대로 전달 옵션을 꼭 확인
+	•	다운로드 시 반드시 Content-Disposition 헤더로 원본 파일명 노출
+
+⸻
+
+7. 결론
+	•	Presigned URL을 도입하면 파일명 인코딩 문제가 반드시 따라온다
+	•	Nuxt.js는 인코딩을 몰라도 되고, Spring Boot에서 인코딩/서명/DB 저장 단일 책임을 지면 깔끔하다
+	•	DB에 original_filename + file_key_encoded 이중 관리 구조를 쓰면
+안정성과 UX를 모두 확보할 수 있다

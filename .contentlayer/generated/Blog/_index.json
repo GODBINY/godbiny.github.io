@@ -1657,7 +1657,7 @@
     "summary": "",
     "slug": "2024/12/[함수형프로그래밍]함수형 프로그래밍 개념",
     "body": {
-      "raw": "### 함수형 프로그래밍의 개념\n#### 액션\n    부르는 시점, 실행 횟수에 의존\n#### 계산\n    입력값을 계산해서 출력. 몇 번을 불러도 상관 없음. 같은 값을 넣으면 같은 값을 내보냄.\n#### 데이터   \n    이벤트에 대한 사실을 기록",
+      "raw": "### 함수형 프로그래밍의 개념\n#### 액션\n    부르는 시점, 실행 횟수에 의존\n#### 계산\n    입력값을 계산해서 출력. 몇 번을 불러도 상관 없음. 같은 값을 넣으면 같은 값을 내보냄.\n#### 데이터   \n    이벤트에 대한 사실을 기록\n",
       "code": "var Component=(()=>{var m=Object.create;var t=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var w=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var E=(n,a)=>()=>(a||n((a={exports:{}}).exports,a),a.exports),B=(n,a)=>{for(var l in a)t(n,l,{get:a[l],enumerable:!0})},i=(n,a,l,h)=>{if(a&&typeof a==\"object\"||typeof a==\"function\")for(let r of w(a))!g.call(n,r)&&r!==l&&t(n,r,{get:()=>a[r],enumerable:!(h=p(a,r))||h.enumerable});return n};var u=(n,a,l)=>(l=n!=null?m(x(n)):{},i(a||!n||!n.__esModule?t(l,\"default\",{value:n,enumerable:!0}):l,n)),f=n=>i(t({},\"__esModule\",{value:!0}),n);var s=E((D,c)=>{c.exports=_jsx_runtime});var N={};B(N,{default:()=>o,frontmatter:()=>v});var e=u(s()),v={title:\"[\\uD568\\uC218\\uD615\\uD504\\uB85C\\uADF8\\uB798\\uBC0D]\\uD568\\uC218\\uD615 \\uD504\\uB85C\\uADF8\\uB798\\uBC0D\\uC758 \\uAE30\\uBCF8\",date:\"2024-12-14\",tags:[\"Functional Programming\"],draft:!1,summary:\"\",slug:\"2024/12/%5B%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%5D%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B0%9C%EB%85%90\"};function d(n){let a={a:\"a\",h3:\"h3\",h4:\"h4\",p:\"p\",path:\"path\",span:\"span\",svg:\"svg\",...n.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsxs)(a.h3,{className:\"content-header\",id:\"\\uD568\\uC218\\uD615-\\uD504\\uB85C\\uADF8\\uB798\\uBC0D\\uC758-\\uAC1C\\uB150\",children:[(0,e.jsx)(a.a,{\"aria-hidden\":\"true\",href:\"#\\uD568\\uC218\\uD615-\\uD504\\uB85C\\uADF8\\uB798\\uBC0D\\uC758-\\uAC1C\\uB150\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(a.span,{className:\"content-header-link\",children:(0,e.jsxs)(a.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(a.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(a.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uD568\\uC218\\uD615 \\uD504\\uB85C\\uADF8\\uB798\\uBC0D\\uC758 \\uAC1C\\uB150\"]}),(0,e.jsxs)(a.h4,{className:\"content-header\",id:\"\\uC561\\uC158\",children:[(0,e.jsx)(a.a,{\"aria-hidden\":\"true\",href:\"#\\uC561\\uC158\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(a.span,{className:\"content-header-link\",children:(0,e.jsxs)(a.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(a.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(a.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uC561\\uC158\"]}),(0,e.jsx)(a.p,{children:\"\\uBD80\\uB974\\uB294 \\uC2DC\\uC810, \\uC2E4\\uD589 \\uD69F\\uC218\\uC5D0 \\uC758\\uC874\"}),(0,e.jsxs)(a.h4,{className:\"content-header\",id:\"\\uACC4\\uC0B0\",children:[(0,e.jsx)(a.a,{\"aria-hidden\":\"true\",href:\"#\\uACC4\\uC0B0\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(a.span,{className:\"content-header-link\",children:(0,e.jsxs)(a.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(a.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(a.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uACC4\\uC0B0\"]}),(0,e.jsx)(a.p,{children:\"\\uC785\\uB825\\uAC12\\uC744 \\uACC4\\uC0B0\\uD574\\uC11C \\uCD9C\\uB825. \\uBA87 \\uBC88\\uC744 \\uBD88\\uB7EC\\uB3C4 \\uC0C1\\uAD00 \\uC5C6\\uC74C. \\uAC19\\uC740 \\uAC12\\uC744 \\uB123\\uC73C\\uBA74 \\uAC19\\uC740 \\uAC12\\uC744 \\uB0B4\\uBCF4\\uB0C4.\"}),(0,e.jsxs)(a.h4,{className:\"content-header\",id:\"\\uB370\\uC774\\uD130\",children:[(0,e.jsx)(a.a,{\"aria-hidden\":\"true\",href:\"#\\uB370\\uC774\\uD130\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(a.span,{className:\"content-header-link\",children:(0,e.jsxs)(a.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(a.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(a.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\uB370\\uC774\\uD130\"]}),(0,e.jsx)(a.p,{children:\"\\uC774\\uBCA4\\uD2B8\\uC5D0 \\uB300\\uD55C \\uC0AC\\uC2E4\\uC744 \\uAE30\\uB85D\"})]})}function o(n={}){let{wrapper:a}=n.components||{};return a?(0,e.jsx)(a,{...n,children:(0,e.jsx)(d,{...n})}):d(n)}return f(N);})();\n;return Component;"
     },
     "_id": "blog/2024/12/[함수형프로그래밍]함수형 프로그래밍 개념.mdx",
@@ -3052,6 +3052,90 @@
       "description": "image, video fallback 작업을 진행하며 알게 된 것들 - 개발자도구 Network Tab & Media",
       "image": "/static/images/twitter-card.png",
       "url": "https://godbiny.github.io/blog/2024/10/개발자 도구 Media tab 에서 의미하는 것들"
+    }
+  },
+  {
+    "title": "requestAnimationFrame",
+    "date": "2025-08-24T00:00:00.000Z",
+    "tags": [
+      "css"
+    ],
+    "draft": true,
+    "summary": "requestAnimationFrame",
+    "slug": "2025/08/requestAnimationFrame",
+    "body": {
+      "raw": "\n",
+      "code": "var Component=(()=>{var x=Object.create;var o=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,l=Object.prototype.hasOwnProperty;var F=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),j=(t,e)=>{for(var n in e)o(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,m)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of _(e))!l.call(t,a)&&a!==n&&o(t,a,{get:()=>e[a],enumerable:!(m=d(e,a))||m.enumerable});return t};var p=(t,e,n)=>(n=t!=null?x(g(t)):{},s(e||!t||!t.__esModule?o(n,\"default\",{value:t,enumerable:!0}):n,t)),q=t=>s(o({},\"__esModule\",{value:!0}),t);var i=F((C,u)=>{u.exports=_jsx_runtime});var y={};j(y,{default:()=>f,frontmatter:()=>M});var r=p(i()),M={title:\"requestAnimationFrame\",slug:\"2025/08/request-animation-frame\",date:\"2025-08-24\",tags:[\"css\"],draft:!0,summary:\"requestAnimationFrame\"};function c(t){return(0,r.jsx)(r.Fragment,{})}function f(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,{...t,children:(0,r.jsx)(c,{...t})}):c(t)}return q(y);})();\n;return Component;"
+    },
+    "_id": "blog/2025/08/requestAnimationFrame.mdx",
+    "_raw": {
+      "sourceFilePath": "blog/2025/08/requestAnimationFrame.mdx",
+      "sourceFileName": "requestAnimationFrame.mdx",
+      "sourceFileDir": "blog/2025/08",
+      "contentType": "mdx",
+      "flattenedPath": "blog/2025/08/requestAnimationFrame"
+    },
+    "type": "Blog",
+    "readingTime": {
+      "text": "0 min read",
+      "minutes": 0,
+      "time": 0,
+      "words": 0
+    },
+    "path": "blog/2025/08/requestAnimationFrame",
+    "filePath": "blog/2025/08/requestAnimationFrame.mdx",
+    "toc": [],
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "requestAnimationFrame",
+      "datePublished": "2025-08-24T00:00:00.000Z",
+      "dateModified": "2025-08-24T00:00:00.000Z",
+      "description": "requestAnimationFrame",
+      "image": "/static/images/twitter-card.png",
+      "url": "https://godbiny.github.io/blog/2025/08/requestAnimationFrame"
+    }
+  },
+  {
+    "title": "uuid",
+    "date": "2025-08-21T00:00:00.000Z",
+    "tags": [
+      "network"
+    ],
+    "draft": false,
+    "summary": "uuid란?",
+    "slug": "2025/08/UUID",
+    "body": {
+      "raw": "https://www.npmjs.com/package/uuid\n",
+      "code": "var Component=(()=>{var p=Object.create;var u=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var w=Object.getOwnPropertyNames;var l=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var h=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),j=(t,n)=>{for(var e in n)u(t,e,{get:n[e],enumerable:!0})},c=(t,n,e,a)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of w(n))!x.call(t,o)&&o!==e&&u(t,o,{get:()=>n[o],enumerable:!(a=f(n,o))||a.enumerable});return t};var _=(t,n,e)=>(e=t!=null?p(l(t)):{},c(n||!t||!t.__esModule?u(e,\"default\",{value:t,enumerable:!0}):e,t)),g=t=>c(u({},\"__esModule\",{value:!0}),t);var i=h((C,s)=>{s.exports=_jsx_runtime});var M={};j(M,{default:()=>d,frontmatter:()=>k});var r=_(i()),k={title:\"uuid\",date:\"2025-08-21\",tags:[\"network\"],draft:!1,summary:\"uuid\\uB780?\",slug:\"2025/08/uuid\"};function m(t){let n={a:\"a\",p:\"p\",...t.components};return(0,r.jsx)(n.p,{children:(0,r.jsx)(n.a,{href:\"https://www.npmjs.com/package/uuid\",children:\"https://www.npmjs.com/package/uuid\"})})}function d(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,{...t,children:(0,r.jsx)(m,{...t})}):m(t)}return g(M);})();\n;return Component;"
+    },
+    "_id": "blog/2025/08/UUID.mdx",
+    "_raw": {
+      "sourceFilePath": "blog/2025/08/UUID.mdx",
+      "sourceFileName": "UUID.mdx",
+      "sourceFileDir": "blog/2025/08",
+      "contentType": "mdx",
+      "flattenedPath": "blog/2025/08/UUID"
+    },
+    "type": "Blog",
+    "readingTime": {
+      "text": "1 min read",
+      "minutes": 0.005,
+      "time": 300,
+      "words": 1
+    },
+    "path": "blog/2025/08/UUID",
+    "filePath": "blog/2025/08/UUID.mdx",
+    "toc": [],
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "uuid",
+      "datePublished": "2025-08-21T00:00:00.000Z",
+      "dateModified": "2025-08-21T00:00:00.000Z",
+      "description": "uuid란?",
+      "image": "/static/images/twitter-card.png",
+      "url": "https://godbiny.github.io/blog/2025/08/UUID"
     }
   }
 ]
