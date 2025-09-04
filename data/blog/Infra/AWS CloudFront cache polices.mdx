@@ -1,0 +1,30 @@
+---
+title: 'AWS CloudFront cache polices'
+date: '2024-09-30'
+tags: ['Infra', 'AWS', 'daily log']
+draft: false
+summary: 'image, video fallback 작업을 진행하며 알게 된 것들 - AWS CloudFront cache polices'
+slug: '2024/09/AWS-CloudFront-cache-polices'
+---
+이미지 리사이징 솔루션을 적용하고 그 솔루션을 버전업 하려던 중
+동영상이 재생되지 않는 문제가 발생했다.
+
+이 업체는 미디어의 url 뒤에 파라미터를 붙이는 식으로 리사이징을 진행하는데,
+버전이 변경되어 캐싱된 기존 데이터(혹시 모를 꼬였을 데이터)와 충돌나게 하지 않기 위해
+Query String을 붙여 버전을 명시하기로 했다. 
+
+### 하지만 첫번째 문제
+> 리사이징 파라미터가 적용되지 않았다
+>
+=> query String 뒤에 오는 문자는 이후로 다 query string으로 인식되었기 때문이다. 따라서 query String을 제일 뒤에 붙임으로써 해결했다.
+
+### 두번째 문제
+> 그럼에도 불구하고 버전이 변경됨을 인지하지 못했다.
+>
+=> cdn 캐시 정책에 query String을 얼마나 무시할지 정할 수 있는 부분이 있었다!
+
+우리회사에서는 아예 허용하고 있지 않는 듯 하다.
+
+https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/cache-key-understand-cache-policy.html
+
+뭐 아무튼, 그러면 새로운 별 기능 없는 파라미터를 /ㅇㅇㅇ/ㅇㅇㅇ 만들어 붙이자고 하는것으로 해결!

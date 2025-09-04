@@ -1,0 +1,69 @@
+---
+slug: 2024/12/[프로그래머스][JavaScript]수열과 구간 쿼리 3
+title: '[프로그래머스][JavaScript]수열과 구간 쿼리 3'
+date: '2024-12-09'
+tags: ['CS', 'Algorithm', 'Coding Test', 'JavaScript']
+draft: false
+summary: ''
+---
+#### 문제 설명
+    정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [i, j] 꼴입니다.
+
+    각 query마다 순서대로 arr[i]의 값과 arr[j]의 값을 서로 바꿉니다.
+
+    위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.
+#### 제한사항
+````
+1 ≤ arr의 길이 ≤ 1,000
+0 ≤ arr의 원소 ≤ 1,000,000
+1 ≤ queries의 길이 ≤ 1,000
+0 ≤ i < j < arr의 길이
+````
+#### 입출력 예
+입출력 #1
+
+|arr	|queries	|result|
+|---|---|----|
+|[0, 1, 2, 3, 4]|	[[0, 3],[1, 2],[1, 4]]|	[3, 4, 1, 0, 2]|
+
+---
+#### 풀이
+````
+function solution(arr, queries) {
+    queries.map((item) => {
+        let temp = arr[item[0]]
+        arr[item[0]] = arr[item[1]]
+        arr[item[1]] = temp
+    })
+    return arr
+}
+````
+---
+#### 알게된 점
+구조 분해 할당을 사용하여 푸는 사람도 있더라.  
+
+구조 분해 할당을 사용하면
+````
+function solution(arr, queries) {
+    queries.map(([a,b]) => {
+        let temp = arr[a]
+        arr[a] = arr[b]
+        arr[b] = temp
+    })
+    return arr
+}
+````
+이렇게 풀 수 있을 것 같다.
+
+
+와. 근데 구조분해할당으로 temp 없이 한방에 바꿔줄 수 있다고 한다. 이건 정말 신세계네...
+
+[구조분해할당](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+```
+function solution(arr, queries) {
+    queries.map(([a,b]) => {
+        [arr[a],arr[b]] = [arr[b],arr[a]]
+    })
+    return arr
+}
+```

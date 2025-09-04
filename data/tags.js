@@ -1,0 +1,31 @@
+export const TAGS = {
+  // Categories
+  CS: 'CS',
+  FE: 'FE',
+  BE: 'BE',
+  INFRA: 'Infra',
+  TOOLS: 'Tools',
+  NETWORK: 'Network',
+  PERFORMANCE: 'Performance',
+  SECURITY: 'Security',
+  BOOKS: 'books',
+  WIKI: 'wiki',
+
+  // Topics & Technologies
+  ALGORITHM: 'Algorithm',
+  CODING_TEST: 'Coding Test',
+  JAVASCRIPT: 'JavaScript',
+  REACT: 'React',
+  CSS: 'CSS',
+  STORYBOOK: 'Storybook',
+  SEO: 'SEO',
+  BROWSER: 'Browser',
+  GIT: 'Git',
+  NEOVIM: 'Neovim',
+  LAZYVIM: 'LazyVim',
+  AWS: 'AWS',
+  AUTHENTICATION: 'Authentication',
+  WEB: 'web',
+  UI_UX: 'ui/ux',
+  DAILY_LOG: 'daily log',
+};

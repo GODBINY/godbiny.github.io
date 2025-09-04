@@ -1,0 +1,45 @@
+---
+slug: 2024/10/[프로그래머스][JavaScript]두 수의 연산값 비교하기
+title: '[프로그래머스][JavaScript]두 수의 연산값 비교하기'
+date: '2024-10-20'
+tags: ['CS', 'Algorithm', 'Coding Test', 'JavaScript']
+draft: false
+summary: ''
+---
+#### 문제 설명
+    연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.
+
+    12 ⊕ 3 = 123
+    3 ⊕ 12 = 312
+    양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a * b 중 더 큰 값을 return하는 solution 함수를 완성해 주세요.
+    
+    단, a ⊕ b와 2 * a * b가 같으면 a ⊕ b를 return 합니다.
+#### 제한사항
+    1 ≤ a, b < 10,000
+#### 입출력 예
+입출력 #1
+
+
+| a	  | b	|result|
+|-----|---|------|
+| 2	  |91	|364|
+| 91	 |2	|912|
+
+---
+#### 풀이
+````
+function solution(a, b) {
+    var maxValue = Math.max(`${a}${b}`,2*a*b);
+    return Number(maxValue);
+}
+````
+---
+#### 다른사람 풀이 보고 알게된 것
+숫자.toString()을 써서 숫자를 문자열로 바꿀 수도 있지만,
+var a = 10
+var b = 20
+parseInt(a+""+b) ==> 1020 이면서 숫자로 바꿔주는 듯 하다.
+
+* parseInt와 Number()의 차이점
+  * [parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+  * [Number()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
