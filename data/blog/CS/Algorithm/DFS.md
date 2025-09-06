@@ -1,0 +1,48 @@
+---
+title: 'DFS(Deep First Search)'
+date: '2025-09-06'
+tags: ['CS', 'Algorithm']
+draft: false
+summary: 'DFS(깊이 우선 탐색)'
+slug: 'algorithm/dfs'
+---
+
+# DFS - 깊이 우선 탐색
+
+- 그래프 탐색 알고리즘
+- 1차원 배열의 인접리스트를 사용한다.
+- 보통 완전 탐색을 목적으로 한다.
+- 완전탐색이 진짜 목적이면 BFS에 비해서는 느리지만, 구현하기가 간편해서 좋음.
+- 스택, 재귀를 활용한다.
+
+# 로직 흐름
+
+> 최초 1회
+
+1. 시작 노드를 스택에 push & visited 처리한다.
+
+> 반복 2. 스택의 가장 마지막 요소 중 방문하지 않은 인접노드를 확인한다.
+
+1. 방문하지 않은 인접노드가 있으면 스택에 push & visited 처리한다.
+2. 모든 인접노드를 방문했다면 현재 노드를 pop한다.
+
+# DFS를 쓰는 이유 (BFS안쓰고)
+
+- 짧은 코드를 원할 때
+- 큐를 사용할 수 없는 상황일 때.
+- 순회&점화식 - 재귀를 사용하고 싶을 떄.
+- 트리에서 최단거리를 탐색하고 싶을 때.
+
+# CODE
+
+```js
+function dfs(graph, v, visited) {
+  visited[v] = true
+  console.log(v)
+  for (i of graph[v]) {
+    if (!visited[i]) {
+      dfs(graph, i, visited)
+    }
+  }
+}
+```
