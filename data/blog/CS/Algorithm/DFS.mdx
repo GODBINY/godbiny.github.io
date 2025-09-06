@@ -7,6 +7,10 @@ summary: 'DFS(깊이 우선 탐색)'
 slug: 'algorithm/dfs'
 ---
 
+import Image from 'next/image'
+
+<Image src="/static/images/DFS.jpg" alt="DFS 다이어그램" width={800} height={600} priority />
+
 # DFS - 깊이 우선 탐색
 
 - 그래프 탐색 알고리즘
@@ -26,12 +30,12 @@ slug: 'algorithm/dfs'
 1. 방문하지 않은 인접노드가 있으면 스택에 push & visited 처리한다.
 2. 모든 인접노드를 방문했다면 현재 노드를 pop한다.
 
-# DFS를 쓰는 이유 (BFS안쓰고)
+# DFS를 쓰는 이유 (BFS 안 쓰고)
 
 - 짧은 코드를 원할 때
-- 큐를 사용할 수 없는 상황일 때.
-- 순회&점화식 - 재귀를 사용하고 싶을 떄.
-- 트리에서 최단거리를 탐색하고 싶을 때.
+- 큐를 사용할 수 없는 상황일 때
+- 순회 & 점화식 - 재귀를 사용하고 싶을 때
+- 트리에서 최단거리를 탐색하고 싶을 때
 
 # CODE
 
@@ -39,7 +43,7 @@ slug: 'algorithm/dfs'
 function dfs(graph, v, visited) {
   visited[v] = true
   console.log(v)
-  for (i of graph[v]) {
+  for (const i of graph[v]) {
     if (!visited[i]) {
       dfs(graph, i, visited)
     }
