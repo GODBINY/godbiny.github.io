@@ -54,7 +54,7 @@ const securityHeaders = [
   },
 ]
 
-const output = process.env.EXPORT ? 'export' : undefined
+const output = process.env.NODE_ENV === 'production' ? 'export' : undefined
 const basePath = process.env.BASE_PATH || ''
 // const unoptimized = process.env.UNOPTIMIZED ? true : undefined
 
@@ -64,7 +64,7 @@ const basePath = process.env.BASE_PATH || ''
 module.exports = () => {
   const plugins = [withContentlayer, withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
-    output: 'export',
+    output,
     basePath,
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
