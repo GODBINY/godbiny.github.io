@@ -1,0 +1,96 @@
+---
+title: '[vue2].sync'
+slug: 'vue2-sync'
+date: '2025-09-08'
+tags: ['FE', 'vue2', 'vueJs']
+draft: false
+summary: 'vue2 Sync'
+---
+
+# vue2/nuxt2에서 .sync와 computed로 prop 동기화하기
+기존에는 .sync와 watch로 prop을 동기화하고 있었다.
+MainLayout에서 popup component를 불러오고 있었는데, 
+레이아웃 --> 팝업 컴포넌트에게 visible 값을 주기도 하고, 
+팝업 --> 레이아웃에게 visible값을 주기도 했다.
+
+하지만 keep-alive & 동일 라우트 재사용 (같은 주소인데 query param이 다른 경우)일 경우
+팝업의 내부 변수는 바뀌었는데 watch로 동기화해주는 값은 바뀌지 않는 현상이 있었다.
+부모의 변수가 진짠데, 자식도 자기 나름대로 로컬 변수를 만들어 썼기 때문.
+
+
+# 기존 코드
+```js
+<!-- Parent.vue -->
+<ChildPopup :visible="isOpen" @update:visible="isOpen = $event" />
+
+<!-- ChildPopup.vue -->
+<script>
+export default {
+  props: { visible: Boolean },
+  data() {
+    return { localVisible: this.visible }
+  },
+  watch: {
+    visible: {
+      immediate: true,
+      handler(v) { this.localVisible = v }
+    }
+  }
+}
+</script>
+```
+
+# 수정한 코드
+```js
+<!-- Parent.vue -->
+<ChildPopup :visible.sync="isOpen" />
+
+
+<!-- ChildPopup.vue -->
+<el-dialog v-model="dialogVisible">
+  ...
+</el-dialog>
+<script>
+export default {
+  props: {
+    visible: { type: Boolean, default: false }
+  },
+  computed: {
+    dialogVisible: {
+      get() {
+        return this.visible
+      },
+      set(v) {
+        this.$emit('update:visible', v)
+      }
+    }
+  }
+}
+</script>```
+
+# [Sync](https://v2.vuejs.org/v2/guide/components-custom-events.html#sync-Modifier)
+prop에 양방향 바인딩이 필요할 때 사용함.
+
+```js
+<!-- 자식 -->
+this.$emit('update:title', newTitle)
+
+<!-- 부모 - 원랜 이렇게 생긴걸  -->
+<text-document
+  v-bind:title="doc.title"
+  v-on:update:title="doc.title = $event"
+></text-document>
+
+<!-- 부모 - 요렇게 합쳐서 쓴다  -->
+<text-document v-bind:title.sync="doc.title"></text-document>
+```
+
+```js
+<!-- 만일 doc = {title, content} 라면  -->
+<!-- 자식 -->
+this.$emit('update:title', newTitle)
+this.$emit('update:content', newTitle)
+
+<!-- 부모  -->
+<text-document v-bind:title.sync="doc"></text-document>
+```
