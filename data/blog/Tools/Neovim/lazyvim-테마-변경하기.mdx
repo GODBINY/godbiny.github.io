@@ -18,19 +18,23 @@ touch ~/.config/nvim/lua/plugins/colorscheme.lua
 ```
 
 ```lua
+-- ~/.config/nvim/lua/plugins/colorscheme.lua
 return {
-  -- 설치하고 싶은 테마 목록
-  { "sainnhe/sonokai"},
-  
-  -- 설치할 것 입력
+  -- Everforest
+  { "sainnhe/everforest", lazy = false, priority = 1000 },
+
+  -- Gruvbox (원하면 추가)
+  { "ellisonleao/gruvbox.nvim", lazy = false, priority = 1000 },
+
   {
-      "LazyVim/LazyVim",
-      opts = {
-          colorscheme = "sonokai"
-        },
+    "LazyVim/LazyVim",
+    opts = {
+      -- 여기서 적용할 colorscheme만 고르기
+      colorscheme = "everforest",
+      -- colorscheme = "gruvbox",
     },
   },
-
+}
 ```
 
 

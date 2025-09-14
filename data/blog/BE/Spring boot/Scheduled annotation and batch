@@ -1,0 +1,18 @@
+---
+title: 'Scheduled Annotation과 Spring batch의 특징'
+slug: 'spring-boot/scheduled-annotation-and-batch'
+date: '2025-09-04'
+tags: ['Spring boot', Wiki']
+draft: true 
+summary: 'Scheduled Annotation과 batch, 각각 어느 때 쓰는지 정리'
+---
+
+#### @Scheduled
+- 메소드에 어노테이션을 붙여서 반복적으로 특정 작업을 실행하는 간단한 스케줄링 기능
+- 개발자가 원하는 시간 및 주기(cron)로 메소드가 자동으로 실행되도록 할 수 있음.
+- 단순 주기성 작업에 적합 (데이터 처리, 트랜잭션 관리, 작업 상태 관리 불가)
+- 별도의 인프라나 관리 기능 없음 (실패 및 성공 관리, 재시작 기능 없음)
+
+#### Spring batch
+- 대용
+
