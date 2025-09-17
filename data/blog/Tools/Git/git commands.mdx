@@ -6,15 +6,38 @@ draft: false
 summary: '자주 쓰는 git commands 정리'
 slug: '2025/07/git-commands'
 ---
+### git switch
 ```bash
-git checkout -b <local branch name> origin/<remote branch name>
-
 # 로컬에 branch가 없을 경우 자동으로 원격 저장소에서 가져오고 --set-upstream 해줌
 # -c : create branch
 # --track : --set-upstream
 # git switch release 
 git switch <branch>
 git switch -c release --track origin/release
+```
+
+### git checkout
+```bash
+git checkout -b <local branch name> origin/<remote branch name>
+```
+
+### cherry-pick 🍒
+```bash
+# 다른 브랜치에서 작업하다가 버그건 발견해서 그것만 고쳐서 배포나갈 때
+# 동료가 개발한 기능/오염된 브랜치에서 일부만 내 브랜치에 가져와 써야할 때 
+# 실수로 다른 브랜치에 커밋햇을 때, 체리픽 하고 잘못된 브랜치에서는 되돌려버리기
+
+# 1. 내 브랜치 따기
+git switch feature/godbin_fn_1
+
+# 2. 가져오고 싶은 커밋의 해시 복사하기
+git log feature/kyu_fn_1
+
+# 3. 복사한 커밋 해시 사용하기
+git cherry-pick <copied_hash_value>
+
+# * 부록 : 범위로 여러 커밋 가져오기 (main과 feature/kyu_fn_1 사이의 변경 이력을 오래된 순서부터 내 브랜치에 적용하기)
+git cherry-pick main..origin/feature/kyu_fn_1
 
 ```
 
