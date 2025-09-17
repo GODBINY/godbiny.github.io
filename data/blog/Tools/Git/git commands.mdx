@@ -8,6 +8,14 @@ slug: '2025/07/git-commands'
 ---
 ```bash
 git checkout -b <local branch name> origin/<remote branch name>
+
+# 로컬에 branch가 없을 경우 자동으로 원격 저장소에서 가져오고 --set-upstream 해줌
+# -c : create branch
+# --track : --set-upstream
+# git switch release 
+git switch <branch>
+git switch -c release --track origin/release
+
 ```
 
 
