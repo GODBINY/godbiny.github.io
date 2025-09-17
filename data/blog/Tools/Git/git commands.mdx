@@ -39,6 +39,9 @@ git cherry-pick <copied_hash_value>
 # * 부록 : 범위로 여러 커밋 가져오기 (main과 feature/kyu_fn_1 사이의 변경 이력을 오래된 순서부터 내 브랜치에 적용하기)
 git cherry-pick main..origin/feature/kyu_fn_1
 
+# * 부록 2 : 머지 이력이 있는 다중 선택의 경우
+git cherry-pick -n $(git log --reverse --pretty=%H --no-merges main..origin/feature/test)
+
 ```
 
 
