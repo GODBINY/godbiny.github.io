@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://godbiny.github.io/</loc>
-<lastmod>2025-09-17</lastmod>
+<lastmod>2025-09-21</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog</loc>
-<lastmod>2025-09-17</lastmod>
+<lastmod>2025-09-21</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/projects</loc>
-<lastmod>2025-09-17</lastmod>
+<lastmod>2025-09-21</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/tags</loc>
-<lastmod>2025-09-17</lastmod>
+<lastmod>2025-09-21</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog/CS/[함수형프로그래밍]함수형 프로그래밍 개념</loc>
@@ -39,6 +39,10 @@
 <url>
 <loc>https://godbiny.github.io/blog/Security/session and JWT</loc>
 <lastmod>2025-08-18T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://godbiny.github.io/blog/Tools/tmux</loc>
+<lastmod>2025-09-21T00:00:00.000Z</lastmod>
 </url>
 <url>
 <loc>https://godbiny.github.io/blog/CS/Algorithm/BackTracking</loc>
