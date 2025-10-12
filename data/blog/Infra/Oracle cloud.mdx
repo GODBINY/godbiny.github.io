@@ -1,0 +1,264 @@
+---
+title: 'Oracle cloud CLI'
+date: '2025-10-12'
+tags: ['Infra', 'Oracle', 'daily log']
+draft: true 
+summary: '오라클 클라우드 CLI Setting'
+slug: '2025/10/oracle_cloud_cli'
+---
+
+# Oracle Cloud Ubuntu + Nginx 완전 복제 매뉴얼
+
+**목표:** 실제로 설정한 Oracle Cloud Ubuntu 서버 환경을 완벽히 재현할 수 있도록  
+CIDR, Subnet, Internet Gateway, Routing, Security List, SSH, Nginx 설정까지  
+모든 세부값을 포함한 완전 복제형 매뉴얼입니다.  
+
+---
+
+## 1. Compartment 생성
+
+1. **Console → Identity & Security → Compartments**
+2. **Create Compartment**
+   - **Name:** `dev`
+   - **Description:** 개발 테스트용 서버
+   - **Parent Compartment:** root
+3. **Create** 클릭
+
+Compartment는 리소스를 논리적으로 구분하는 폴더 개념입니다.
+
+---
+
+## 2. VCN (Virtual Cloud Network) 생성
+
+1. **Networking → Virtual Cloud Networks → Create VCN**
+2. **VCN with Internet Connectivity** 선택
+3. 세부 설정 입력:
+   - **VCN Name:** `godbin-vcn`
+   - **Compartment:** `dev`
+   - **VCN CIDR Block:** `10.0.0.0/16`
+   - **DNS Label:** `godbin`
+4. **Create VCN** 클릭
+
+자동으로 생성되는 리소스:
+
+- VCN: 10.0.0.0/16
+- Internet Gateway: `godbin-vcn-igw`
+- Route Table: `godbin-vcn-default-route-table`
+- Security List: `godbin-vcn-default-security-list`
+- Subnet: `godbin-subnet-public (10.0.2.0/24)`
+
+---
+
+## 3. Subnet 구성 확인
+
+1. **VCN → Subnets → godbin-subnet-public**
+2. 세부 정보 확인:
+   - **Name:** `godbin-subnet-public`
+   - **CIDR Block:** `10.0.2.0/24`
+   - **Subnet Type:** Public Subnet
+   - **DNS Label:** `godbinpub`
+   - **Route Table:** `godbin-vcn-default-route-table`
+   - **Security List:** `godbin-vcn-default-security-list`
+   - **DHCP Options:** 기본값 사용
+3. `Enable Public IP Address` → 활성화
+
+---
+
+## 4. Internet Gateway 구성
+
+1. **VCN → Internet Gateways → godbin-vcn-igw** 클릭
+2. 상태가 **Available** 인지 확인
+3. 연결된 Route Table 확인:
+   - **Target:** Internet Gateway (`godbin-vcn-igw`)
+   - **Destination CIDR Block:** `0.0.0.0/0`
+
+이 설정이 있어야 외부에서 인스턴스로 접속할 수 있습니다.
+
+---
+
+## 5. Route Table 확인
+
+1. **VCN → Route Tables → godbin-vcn-default-route-table**
+2. 규칙 목록 확인:
+
+| Destination CIDR | Target Type | Target Name |
+|------------------|-------------|--------------|
+| 0.0.0.0/0 | Internet Gateway | godbin-vcn-igw |
+
+---
+
+## 6. Security List (보안 규칙) 설정
+
+1. **VCN → Security Lists → godbin-vcn-default-security-list**
+2. **Ingress Rules** 추가:
+
+| Protocol | Source CIDR | Port Range | Description |
+|-----------|--------------|-------------|--------------|
+| TCP | 0.0.0.0/0 | 22 | SSH |
+| TCP | 0.0.0.0/0 | 80 | HTTP |
+| TCP | 0.0.0.0/0 | 443 | HTTPS |
+
+3. **Egress Rules** 기본값 유지 (모든 아웃바운드 허용)
+
+---
+
+## 7. 인스턴스 생성
+
+1. **Compute → Instances → Create Instance**
+2. 설정
+   - **Name:** `web-was`
+   - **Compartment:** `dev`
+   - **Image:** Ubuntu 22.04 (Canonical)
+   - **Shape:** VM.Standard.E2.1.Micro (1 OCPU, 1GB RAM)
+3. **Networking**
+   - **VCN:** `godbin-vcn`
+   - **Subnet:** `godbin-subnet-public (10.0.2.0/24)`
+   - **Assign Public IPv4 address:** 활성화
+4. **Add SSH Keys**
+
+   ```bash
+   ssh-keygen -t rsa -b 4096 -C "heekyu@oracle"
+   cat ~/.ssh/id_rsa.pub
+   ```
+
+   출력된 `.pub` 내용 복사 후 콘솔에 붙여넣기
+5. **Create** 클릭
+
+생성 후 확인:
+
+- **Public IP:** 예시 `132.145.xxx.xxx`
+- **Private IP:** `10.0.2.10` (자동 할당)
+
+---
+
+## 8. SSH 접속
+
+Mac/Linux:
+
+```bash
+chmod 600 ~/.ssh/id_rsa_oracle
+ssh -i ~/.ssh/id_rsa_oracle ubuntu@132.145.xxx.xxx
+```
+
+Windows (PuTTY):
+
+- `.ppk` 변환 후 접속
+
+접속 성공 시:
+
+```
+Welcome to Ubuntu 22.04 LTS
+```
+
+---
+
+## 9. 시스템 업데이트 및 Nginx 설치
+
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y nginx
+```
+
+---
+
+## 10. Nginx 서비스 설정
+
+```bash
+sudo systemctl enable nginx
+sudo systemctl start nginx
+sudo systemctl status nginx
+```
+
+정상 상태: `Active: active (running)`
+
+---
+
+## 11. UFW 방화벽 설정 (선택)
+
+```bash
+sudo ufw allow 'Nginx Full'
+sudo ufw enable
+sudo ufw status
+```
+
+---
+
+## 12. 웹 서버 확인
+
+```bash
+curl -I http://127.0.0.1
+```
+
+브라우저에서 접속:  
+`http://132.145.xxx.xxx` → "Welcome to nginx!" 페이지 확인
+
+---
+
+## 13. 설정 리로드 및 테스트
+
+```bash
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+---
+
+## 14. 도메인 연결
+
+도메인 관리 콘솔에서 A레코드 추가:
+
+```
+Type: A
+Host: @
+Value: 132.145.xxx.xxx
+TTL: 600
+```
+
+---
+
+## 15. SSL 인증서 (Let's Encrypt)
+
+```bash
+sudo apt install certbot python3-certbot-nginx -y
+sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+sudo systemctl reload nginx
+```
+
+자동 갱신 확인:
+
+```bash
+sudo systemctl list-timers | grep certbot
+```
+
+---
+
+## 16. 최종 구조 요약
+
+### 네트워크 구조
+
+```
+VCN: godbin-vcn (10.0.0.0/16)
+├── Subnet: godbin-subnet-public (10.0.2.0/24)
+│   ├── Instance: web-was (10.0.2.10)
+│   └── Security List: Allow 22, 80, 443
+└── Internet Gateway: godbin-vcn-igw
+    └── Route Table: 0.0.0.0/0 → IGW
+```
+
+### 인스턴스 정보
+
+| 항목 | 값 |
+|------|----|
+| Name | web-was |
+| Image | Ubuntu 22.04 LTS |
+| Shape | VM.Standard.E2.1.Micro |
+| Public IP | 132.145.xxx.xxx |
+| Private IP | 10.0.2.10 |
+| Ports | 22 / 80 / 443 |
+| Domain | (optional) yourdomain.com |
+
+---
+
+이 매뉴얼로 동일한 인프라 완전 복제가 가능합니다.
+모든 CIDR, 보안 규칙, IP 설정, 라우팅, SSH 구성 포함.
+racle Cloud에서 외부 접속 가능한 Ubuntu + Nginx 서버가 구축되었습니다.
