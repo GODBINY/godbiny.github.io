@@ -1,0 +1,28 @@
+---
+title: 'ES6 - class'
+date: '2025-12-15'
+tags: ['javascript', 'ES6']
+draft: false
+summary: 'ES6 문법 : 클래스'
+slug: 'es6-class'
+---
+
+### ES6의 클래스 문법
+
+* ES6 이전에는 자바스크립트에 클래스가 없없음.
+* 개념은 있었지만 prototype이라는 문법을 사용하여 구현하여야 했음.
+* ES6 문법부터는 class가 도입됨.
+
+````javascript
+Class Hi {
+  constructor(name) {
+    this.name = name;
+  }
+  say() {
+    console.log(this.name + ': 안녕')
+  }
+}
+
+const hi = new Hi('하이');
+hi.say(); // 하이: 안녕
+````
