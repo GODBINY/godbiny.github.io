@@ -1,9 +1,48 @@
 ---
 title: 'ES6 - Arrow Function'
-date: '2025-12-15'
+date: '2025-12-18'
 tags: ['javascript', 'ES6']
 draft: false
 summary: 'ES6 문법 - 화살표 함수'
 slug: 'es6 - arrow function'
 ---
+
+### 화살표 함수
+- ES6에서 새로 나온 함수를 표현하는 새로운 방식.
+- 함수를 파라미터로 전달할 때 유용하다.
+
+### 일반함수와 화살표함수의 차이
+- 일반 함수는 호출당할 때 this가 정해짐 
+- arrow함수는 this를 새로 만들지않고 바깥 메소드의 this를 그대로 캡쳐
+
+
+
+````javascript
+export default {
+  data() {
+    return { count: 0 }
+  },
+  methods: {
+    start() {
+      setTimeout(function () {
+        this.count++ // broken
+      }, 1000)
+    }
+  }
+}
+
+
+export default {
+  data() {
+    return { count: 0 }
+  },
+  methods: {
+    start() {
+      setTimeout(() => {
+        this.count++
+      }, 1000)
+    }
+  }
+}
+````
 
