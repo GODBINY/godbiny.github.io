@@ -1,0 +1,30 @@
+---
+title: '[Html]기본'
+slug: 'html-fundamental'
+date: '2025-12-21'
+tags: ['FE', 'Html', 'SEO']
+draft: false 
+summary: 'html 기본'
+---
+
+### HTML의 기본 구조
+
+````html
+<!DOCTYPE html> <!-- Document Type Definition. DTD. 어떤 문서 형식을 따라야하는지 알려주는것, HTML5 이후로는 아래와 같이 고정 -->
+<html lang="ko"> <!-- HTML 문서의 시작과 끝을 의미. 모든 태그는 이 안에 있어야한다.  -->
+  <head> <!-- 메타데이터를 정의하는 영역. 문서에 대한 정보를 작성 -->
+    <meta charset="UTF-8"> <!-- 최근엔  UTF-8만 사용함 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- IE의 렌더링엔진을 강제로 최신 렌더링 엔진으로 지정. -->
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0"> <!-- 뷰포트 정의 -->
+    <title>This is title</title> <!-- 문서의 제목 지정 -->
+  </head>
+ <body> <!-- 브라우저에서 표시되는 내용 여기 다 적기  -->
+    somthing...
+    <p>somting....</p>
+  </body>
+</html>
+````
+
+### title tag & SEO
+- 모든 HTML문서는 반드시 1개의 title 태그를 사용해 제목을 지정해야함. 각 제목은 문서마다 중복되면 안됨.
+- 제목이 중복된 문서가 여러개 있으면 신뢰성이 떨어진다고 판단, 검색엔진 노출 시 불이익이 있음.
